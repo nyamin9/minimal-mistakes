@@ -4,9 +4,11 @@
 
 @charset "utf-8";
 
+@import "custom/customImport.scss";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+@import "custom/customOverride.scss";
 
 @font-face {
     font-family: 'RIDIBatang';
