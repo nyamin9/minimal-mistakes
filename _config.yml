@@ -13,7 +13,11 @@
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+dark_theme_toggle        : true
 
+after_footer_scripts:
+  - /assets/js/custom/dark-theme.js
+  
 # Site Settings
 locale                   : "en-US"
 title                    : "프로그래밍구_Bio/Data"
@@ -294,7 +298,4 @@ defaults:
       mathjax: true
       mathjax_autoNumber: true
       sidebar_main: true
-      
-dark_theme_toggle        : true
-after_footer_scripts:
-  - /assets/js/custom/dark-theme.js
+
