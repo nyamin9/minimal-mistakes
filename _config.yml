@@ -294,3 +294,5 @@ defaults:
       mathjax: true
       mathjax_autoNumber: true
       sidebar_main: true
+      
+dark_theme_toggle        : true
