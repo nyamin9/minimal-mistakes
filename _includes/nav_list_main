@@ -30,6 +30,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            
         <span class="nav__sub-title">Pandas</span>
             <ul>
                 {% for category in site.categories %}
@@ -52,6 +53,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            
         <span class="nav__sub-title">R</span>
             <ul>
                 {% for category in site.categories %}
@@ -74,21 +76,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Statistics</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Statistics" %}
-                        <li><a href="/categories/statistics" class="">통계학 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "DataMining" %}
-                        <li><a href="/categories/datamining" class="">데이터마이닝 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
+        
         <span class="nav__sub-title">SQL</span>
             <ul>
                 {% for category in site.categories %}
@@ -97,6 +85,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            
         <span class="nav__sub-title">AI</span>
             <ul>
                 {% for category in site.categories %}
