@@ -84,8 +84,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Data_mining" %}
-                        <li><a href="/categories/data_mining" class="">데이터마이닝 ({{category[1].size}})</a></li>
+                    {% if category[0] == "DataMining" %}
+                        <li><a href="/categories/datamining" class="">데이터마이닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
