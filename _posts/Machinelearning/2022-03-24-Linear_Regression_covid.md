@@ -107,6 +107,8 @@ d[d['date'].duplicated()]
 >>
 date	retail_and_recreation_percent_change_from_baseline	grocery_and_pharmacy_percent_change_from_baseline	parks_percent_change_from_baseline	transit_stations_percent_change_from_baseline	workplaces_percent_change_from_baseline	residential_percent_change_from_baseline	seoul_retail_and_recreation_percent_change_from_baseline	seoul_grocery_and_pharmacy_percent_change_from_baseline	seoul_parks_percent_change_from_baseline	seoul_transit_stations_percent_change_from_baseline	seoul_workplaces_percent_change_from_baseline	seoul_residential_percent_change_from_baseline	confirmed_new	deaths_new	recovered_new
 ```  
+중복값 역시 존재하지 않는다. 아주 깨끗하게 정리된 데이터이기 때문에 곧바로 train set과 target으로 나누면 될 듯하다.  
+
 * * *
 ## 2. target / train set 정의  
 
@@ -135,6 +137,11 @@ print(X.shape)
 ```
 >> (314, 8)
 ```  
+
+저렇게 슬라이싱하는 걸로만 봐서는 무슨 소리인지 한번에 이해하기 힘들다. 그래서 과정을 아래처럼 도식화했다.
+
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/159910754-3fb0b82a-a93d-4da5-b336-79e6dc04d9df.png" width="400" /></p>  
+  
 
 🔨 model 학습에 사용하기 위해 X, y를 모두 pytorch의 floattensor로 변환하자.  
 
