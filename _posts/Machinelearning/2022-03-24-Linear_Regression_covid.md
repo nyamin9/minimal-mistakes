@@ -109,7 +109,10 @@ date	retail_and_recreation_percent_change_from_baseline	grocery_and_pharmacy_per
 ```  
 
 중복값 역시 존재하지 않는다. 아주 깨끗하게 정리된 데이터이기 때문에 곧바로 train set과 target으로 나누면 될 듯하다.
+<<<<<<< HEAD
 
+=======
+>>>>>>> b9cb0fd5bf8e42a7ca7aaccf5c203f0f3394eee0
 
 * * *
 ## 2. target / train set 정의  
