@@ -107,11 +107,9 @@ d[d['date'].duplicated()]
 >>
 date	retail_and_recreation_percent_change_from_baseline	grocery_and_pharmacy_percent_change_from_baseline	parks_percent_change_from_baseline	transit_stations_percent_change_from_baseline	workplaces_percent_change_from_baseline	residential_percent_change_from_baseline	seoul_retail_and_recreation_percent_change_from_baseline	seoul_grocery_and_pharmacy_percent_change_from_baseline	seoul_parks_percent_change_from_baseline	seoul_transit_stations_percent_change_from_baseline	seoul_workplaces_percent_change_from_baseline	seoul_residential_percent_change_from_baseline	confirmed_new	deaths_new	recovered_new
 ```  
-<<<<<<< HEAD
-중복값 역시 존재하지 않는다. 아주 깨끗하게 정리된 데이터이기 때문에 곧바로 train set과 target으로 나누면 될 듯하다.  
-=======
+
 중복값 역시 존재하지 않는다. 아주 깨끗하게 정리된 데이터이기 때문에 곧바로 train set과 target으로 나누면 될 듯하다.
->>>>>>> c78c2cf17a3043a5e5dfa2b1a9603978f8deb805
+
 
 * * *
 ## 2. target / train set 정의  
@@ -168,4 +166,4 @@ y.shape
 >> torch.Size([314])
 ```  
 * * *
-🔨 이렇게 해서 데이터를 가져오고, train_set과 target을 설정하는 것까지 끝냈다. 다음 포스팅에서는 이 데이터들을 가지고 학습모델을 만들어 보자.
+🔨 이렇게 해서 데이터를 가져오고, train_set(X)과 target(y)을 설정하는 것까지 끝냈다. 다음 포스팅에서는 이 데이터들을 가지고 학습모델을 만들어 보자.
