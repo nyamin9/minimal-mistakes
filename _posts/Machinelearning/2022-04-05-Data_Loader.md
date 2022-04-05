@@ -1,5 +1,5 @@
 ---
-title : "⚙ 5. [파이토치] Data_Loader"
+title : "⚙ 8. [파이토치] Data_Loader"
 
 categories:
     - Machinelearning
