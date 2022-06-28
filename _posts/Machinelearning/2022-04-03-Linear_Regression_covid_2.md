@@ -1,5 +1,5 @@
 ---
-title : "⚙ 5. [파이토치] Covid-19 데이터로 Linear Regression 구현하기(2)"
+title : "⚙ 7. [파이토치] Covid-19 데이터로 Linear Regression 구현하기(2)"
 
 categories:
     - Machinelearning
