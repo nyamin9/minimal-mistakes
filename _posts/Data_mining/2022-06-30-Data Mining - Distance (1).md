@@ -40,7 +40,7 @@ last_modified_at: 2022-06-30
 * * *  
 ## 2. Attributes Type  
  
-- 1. <b>Categorical Data</b>  
+- <b>Categorical Data</b>  
 
     - Nominal  
         - categories / states / 이름 / <a>순서 없음</a>  
@@ -56,7 +56,7 @@ last_modified_at: 2022-06-30
         - ex) size / grade / 설문조사 결과  
 
 
-- 2. <b>Numerical Data</b>  
+- <b>Numerical Data</b>  
   
     - Discrete  
         - <a>정수</a> / 이산형 / 카운트 가능. ex) age  
