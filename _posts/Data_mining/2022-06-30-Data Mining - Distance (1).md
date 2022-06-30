@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (2) - Distance 1"
+title : "🧩 Data Mining (2) - Data Set"
 
 categories:
     - Data_mining
