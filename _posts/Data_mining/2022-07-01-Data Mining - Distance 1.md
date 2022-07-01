@@ -41,6 +41,7 @@ last_modified_at: 2022-07-01
   
 🧩 이번에는 두 object 들 사이의 Distance를 나타내는 Matrix인 <a>Dissimilarity Matrix</a>에 대해 알아보자. 보다 편한 이해를 위해 앞서서 설명한 Data Set의 구조를 좀 더 자세히 나타내줄 것이다. 그리고 앞으로는 이 구조를 <a>Data Matrix</a>라고 부르자.  
 
+
   
 <b>📝Data Matrix</b>  
 
@@ -50,12 +51,15 @@ last_modified_at: 2022-07-01
 |<b>d 2</b>|x<sub>21</sub>|x<sub>22</sub>|x<sub>23</sub>|...|x<sub>2m</sub>|
 |...|...|...|...|...|...|
 |<b>d n</b>|x<sub>n1</sub>|x<sub>n2</sub>|x<sub>n3</sub>|...|x<sub>nm</sub>|  
+
+
   
 👉 위의 Data Matrix를 보면 알 수 있지만 위 구조는 m개의 feature로 표현되는 n개의 object로 이루어진다. 즉, (n x m) matrix이다.  
   
 🧩 이제는 이를 바탕으로 해서 Dissimilarity Matrix를 만들 생각인데, 이를 위해서 우리는 비교하고 싶은 하나의 feature를 골라올 것이다. 그렇게 만들어지는 구조는 아래의 그림과 같다.  
   
 <b>📝Dissimilarity Matrix</b>  
+
   
 ||d 1|d 2|d 3|...|d n|
 |:---:|:------:|:--------:|:--------:|:---:|:---------:|
@@ -65,7 +69,10 @@ last_modified_at: 2022-07-01
 |...|...|...|...|...|...|
 |<b>d n</b>|d(n,1)|d(n,2)|d(n,3)|...|d(n,n)|  
 
+
+
 👉 각각의 d(i,j)는 하나의 feature에 대해 정해둔 Distance Measure를 통해 구한 objec i와 object j의 거리를 나타낸다. 이를 통합해서 Matrix 형태로 표현한다. 이때 자기 자신과의 distance는 당연히 0이고, d(1,2)와 d(2,1)은 서로 같은 object들 간의 비교이기 때문에 서로 같은 값을 가진다. 따라서, Symmetric(대칭성)에 의해 이 Matrix는 아래와 같이 표현되기도 한다.  
+
 
   
 ||d 1|d 2|d 3|...|d n|
@@ -75,6 +82,8 @@ last_modified_at: 2022-07-01
 |<b>d 3</b>|d(3,1)|d(3,2)|0|||
 |...|...|...|...|0||
 |<b>d n</b>|d(n,1)|d(n,2)|d(n,3)|...|0|  
+
+
   
 🧩 앞서 말했듯이 이 distance를 구하기 위한 measure를 미리 정해주는데, 이 measure들은 variables의 자료형에 따라 선택하는 기준이 달라진다. 이 내용들은 다음 포스팅에서 소개할 것이다.  
   
