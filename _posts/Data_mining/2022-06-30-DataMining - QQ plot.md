@@ -8,6 +8,7 @@ tags:
 
 toc : true
 toc_sticky : true
+use_math: true
 
 date: 2022-06-30
 last_modified_at: 2022-06-30
