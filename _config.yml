@@ -299,3 +299,9 @@ defaults:
       mathjax_autoNumber: true
       sidebar_main: true
 
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
