@@ -8,6 +8,7 @@ tags:
 
 toc : true
 toc_sticky : true
+use_math: true
 
 date: 2022-06-30
 last_modified_at: 2022-06-30
@@ -28,7 +29,8 @@ last_modified_at: 2022-06-30
     - IQR이 크면 중앙을 기준으로 데이터가 퍼져있음을 의미  
     - IQR이 작으면 중앙을 기준으로 데이터가 모여있음을 의미   
   
-🧩 Function  <center>$$f_i=\(i - 0.5)/N$$</center>   
+🧩 Function  
+<center>$f_{i}=(i - 0.5)/N$</center>   
 
 - 이때 i는 data의 인덱스이다.  
 - ex1) 1 2 3 4 5 에 대해서 3의 f-value = (3-0.5) / 5 = 0.5 ▶ Q<sub>2</sub>  
