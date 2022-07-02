@@ -76,8 +76,9 @@ last_modified_at: 2022-07-02
   
   
     
-<center>$feature\;f와\;index\;\,i에\;대해서\;\;r_{if}∈{1,2,...,M_{if}}\\r_{if}\;는\;value의\;순위,\;M_{if}는\;전체개수$</center>
-  <center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center>  
+<center>$feature\;f와\;index\;\,i에\;대해서\;\;r_{if}∈{1,2,...,M_{if}}\\r_{if}\;는\;value의\;순위,\;M_{if}는\;전체개수$</center>  
+    
+<center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center>  
 
 
 👉 수식만 보면 뭔가 복잡해보이는데, 그냥 단순히 순위를 매긴다고 생각하면 편할 것 같다. 예시를 한번 살펴보도록 하자.  
