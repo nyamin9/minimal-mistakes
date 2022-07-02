@@ -23,8 +23,9 @@ last_modified_at: 2022-07-02
 - <b>Simple Matching</b>  
     - 먼저 알아볼 방법은 simple matching이라는 방법이다. 이 방법을 통한 object 사이의 distance는 아래와 같이 표현된다.  
 <center>$d(i,j)=\frac{(p-m)}{p}$</center>  
-    - 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
-    - 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.  
+
+- 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
+- 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.  
 
     
     ||Blood Type|Hair Color|
@@ -34,13 +35,13 @@ last_modified_at: 2022-07-02
     |student 3|B|Black|
     |student 4|AB|Red|  
       
-    - 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
-    - $$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$$  
+- 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
+<cneter>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center>  
       
-    - 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
-    - $$d(s2,s4)=\frac{(2-0)}{2}=1$$  
+- 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
+<center>$d(s2,s4)=\frac{(2-0)}{2}=1$</center>  
       
-    - 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.  
+- 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.  
 
       
 - <b>Use a large number of binary attributes</b>  
@@ -54,7 +55,7 @@ last_modified_at: 2022-07-02
 
       
 👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
-$$d(i,j)=\frac{(p-m)}{p}$$  
+<center>$d(i,j)=\frac{(p-m)}{p}$<center>  
 
 * * *  
   
