@@ -53,9 +53,12 @@ $$d(s2,s4)=\frac{(2-0)}{2}=1$$
     |student 2|1|0|  
 
       
-    👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
+👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
 $$d(i,j)=\frac{(p-m)}{p}$$  
+
 * * *  
+  
+  
 ## 2. Categorical Attributes - Ordinal  
   
 위에서 다룬 nominal data와는 다르게 순위가 있는 자료형이다.  
