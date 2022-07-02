@@ -29,7 +29,7 @@ last_modified_at: 2022-07-02
 
 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
 
-$$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$$  
+<center>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center>  
 
 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
 
