@@ -21,11 +21,10 @@ last_modified_at: 2022-07-02
 ## 1. Categorical Attributes - Nominal  
   
 - <b>Simple Matching</b>  
-    - 먼저 알아볼 방법은 simple matching이라는 방법이다. 이 방법을 통한 object 사이의 distance는 아래와 같이 표현된다.  
+  - 먼저 알아볼 방법은 simple matching이라는 방법이다. 이 방법을 통한 object 사이의 distance는 아래와 같이 표현된다.  
 <center>$d(i,j)=\frac{(p-m)}{p}$</center>  
-
-- 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
-- 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.  
+  - 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
+  - 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.  
 
     
     ||Blood Type|Hair Color|
@@ -34,36 +33,32 @@ last_modified_at: 2022-07-02
     |student 2|B|Brown|
     |student 3|B|Black|
     |student 4|AB|Red|  
-      
-- 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
+    
+  - 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
   
 <cneter>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center>  
 
-      
-- 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
+  - 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
   
 <center>$d(s2,s4)=\frac{(2-0)}{2}=1$</center>  
 
-      
-- 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.  
-
-      
-- <b>Use a large number of binary attributes</b>  
   
-    - 각 nominal state에 대해 새로운 binary attribute를 생성하는 방법이다. 즉, categorical 형태로 주어진 각 feature들을 binary 형태로 바꿔주겠다는 의미이다. 이를 위 예시의 student 1과 student 2에 적용하면 아래와 같이 바뀐다. Blodd type A를 0으로, B를 1로 바꿔줬으며, Hair Color Black을 1로, Brown을 0으로 바꿔 나타내었다.  
-      
+  - 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.    
 
       
-    ||Blood Type|Hair Color|
+- <b>Use a large number of binary attributes</b>  ]
+  
+  - 각 nominal state에 대해 새로운 binary attribute를 생성하는 방법이다. 즉, categorical 형태로 주어진 각 feature들을 binary 형태로 바꿔주겠다는 의미이다. 이를 위 예시의 student 1과 student 2에 적용하면 아래와 같이 바뀐다. Blodd type A를 0으로, B를 1로 바꿔줬으며, Hair Color Black을 1로, Brown을 0으로 바꿔 나타내었다.  
+    
+    
+  - ||Blood Type|Hair Color|
     |-|:-------:|:--------:|
     |student 1|0|1|
     |student 2|1|0|  
     
-
-      
-👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
-
-<center>$d(i,j)=\frac{(p-m)}{p}$<center>  
+    
+  - 👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
+  <center>$d(i,j)=\frac{(p-m)}{p}$<center>  
   
 
 * * *  
@@ -84,15 +79,18 @@ last_modified_at: 2022-07-02
 👉 수식만 보면 뭔가 복잡해보이는데, 그냥 단순히 순위를 매긴다고 생각하면 편할 것 같다. 예시를 한번 살펴보도록 하자.  
   
 freshman 1 / sopomore 2 / junior 3 / senior 4 에 대해서 각각의 $Z$값을 먼저 보면,  
+
 $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된다.  
   
 이 $Z$값을 바탕으로 해서 distance를 구하게 되는데, 그 계산은 단순 뺼셈 연산이다.  
-  
-$d(freshman,senior) = 1-0=1$  
-  
-$d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$  
-* * *
 
+<center>$d(freshman,senior) = 1-0=1$</center>  
+  
+  
+<center>$d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$</center>  
+  
+* * *  
+  
   
 ## 3. Binary Attributes - 0/1  
   
@@ -153,5 +151,7 @@ $d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$
 * * *  
 🧩 이번 포스팅에서는 categorical data에 대한 distance measure를 알아보았다. 종류가 다양하고, 데이터의 도메인에 따라서 적용하는 법이 다르지만 위의 예시들만 잘 살펴봐도 나름 스근하게 넘어갈 수 있는 내용들인 것 같다😊. 앞으로 나올 내용들의 기초가 되는 부분들이기 때문에 나름 자세히 다뤄보었는데, 충분한 설명이 되었으면 좋겠다. 이제 다음 포스팅에서는 Numerical Data의 distance를 구해보도록 하자🏃‍♂️🏃‍♂️.  
   
+  
 * * *  
+  
 <div style="text-align: left">💡위 포스팅은 한국외국어대학교 바이오메디컬공학부 고윤희 교수님의 [생명정보학을 위한 데이터마이닝] 강의 내용을 바탕으로 함을 밝힙니다.</div>
