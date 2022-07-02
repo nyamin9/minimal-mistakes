@@ -22,7 +22,7 @@ last_modified_at: 2022-07-02
   
 - <b>Simple Matching</b>  
     - 먼저 알아볼 방법은 simple matching이라는 방법이다. 이 방법을 통한 object 사이의 distance는 아래와 같이 표현된다.  
-    $$d(i,j)=\frac{(p-m)}{p}$$  
+    <center>$d(i,j)=\frac{(p-m)}{p}$</center>  
     - 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
     - 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.    
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/176986208-14de889e-3996-4c85-aeeb-b8783d5f1784.png" width="350" /></p>  
