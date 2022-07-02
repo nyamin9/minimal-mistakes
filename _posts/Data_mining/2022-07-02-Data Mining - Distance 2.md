@@ -30,12 +30,12 @@ last_modified_at: 2022-07-02
 
 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
 
-<center>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center><br></br>  
+<center>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center><br>  
 
 
 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
 
-<center>$d(s2,s4)=\frac{(2-0)}{2}=1$</center><br></br>  
+<center>$d(s2,s4)=\frac{(2-0)}{2}=1$</center><br>  
 
 
 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.  
@@ -47,7 +47,7 @@ last_modified_at: 2022-07-02
 
 👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
 
-<center>$d(i,j)=\frac{(p-m)}{p}$</center><br></br>  
+<center>$d(i,j)=\frac{(p-m)}{p}$</center><br>  
 
 
 * * *  
@@ -59,10 +59,10 @@ last_modified_at: 2022-07-02
 
 🧩 이 데이터의 distance를 구하는 방법은 ordinal variables를 그것의 순위로 변경해주는 것인데, 이는 아래와 같은 방식으로 정해진다.  
 
-<center>$feature\;f,\;index\;\,i,\;\;r_{if}∈{1,2,...,M_{if}}\;\;and\;\;r_{if}=\;value\;ranking,\;M_{if}=\;amount$</center><br></br>  
+<center>$feature\;f,\;index\;\,i,\;\;r_{if}∈{1,2,...,M_{if}}\;\;and\;\;r_{if}=\;value\;ranking,\;M_{if}=\;amount$</center><br> 
 
 
-<center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center><br></br>  
+<center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center><br>  
 
 
 
@@ -75,7 +75,7 @@ $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된�
 
 이 $Z$값을 바탕으로 해서 distance를 구하게 되는데, 그 계산은 단순 뺼셈 연산이다.  
 
-<center>$d(freshman,senior) = 1-0=1$</center><br></br>  
+<center>$d(freshman,senior) = 1-0=1$</center><br>  
 
 <center>$d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$</center>
   
@@ -98,15 +98,15 @@ $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된�
 👉 이제 각각의 경우에 대한 distance를 구해보도록 하자.  
 
 🧩 Distance measure for <a>symmetric</a> binary variables  
-<center>$d(i,j)=\frac{r+s}{q+r+s+t}$</center><br></br>
+<center>$d(i,j)=\frac{r+s}{q+r+s+t}$</center><br>
 
   
 🧩⭐Distance measure for <a>asymmetric</a> binary variables⭐  
-<center>$d(i,j)=\frac{r+s}{q+r+s}$</center><br></br>
+<center>$d(i,j)=\frac{r+s}{q+r+s}$</center><br>
 
   
 🧩⭐Similarity measure for <a>asymmetric</a> binary variables⭐  
-<center>$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$</center><br></br>
+<center>$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$</center><br>
   
 🧩 예시를 한번 살펴보도록 하자!!  
 
@@ -119,8 +119,10 @@ $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된�
   
 🧩 위의 공식에 따라서 distance를 구해보자.  
 
-<center>$d(i,j)=\frac{r+s}{q+r+s}\\d(jack,jim)=\frac{1+1}{1+1+1}=0.67\\d(jack,mary)=\frac{0+1}{2+0+1}=0.33\\d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center><br></br>  
-
+<center>$d(i,j)=\frac{r+s}{q+r+s}$</center><br>  
+<center>$d(jack,jim)=\frac{1+1}{1+1+1}=0.67$</center><br>  
+<center>$d(jack,mary)=\frac{0+1}{2+0+1}=0.33$</center><br>  
+<center>$d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center><br>
 
 
 
