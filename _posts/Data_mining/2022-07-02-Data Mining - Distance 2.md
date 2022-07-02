@@ -59,7 +59,7 @@ last_modified_at: 2022-07-02
 
 🧩 이 데이터의 distance를 구하는 방법은 ordinal variables를 그것의 순위로 변경해주는 것인데, 이는 아래와 같은 방식으로 정해진다.  
 
-<center>$feature\;f,\;index\;\,i,\;\;r_{if}∈{1,2,...,M_{if}}\;&\;r_{if}=\;value\;ranking,\;M_{if}=\;amount$</center>  
+<center>$feature\;f,\;index\;\,i,\;\;r_{if}∈{1,2,...,M_{if}}\;\;and\;\;r_{if}=\;value\;ranking,\;M_{if}=\;amount$</center>  
 
 
 <center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center>  
