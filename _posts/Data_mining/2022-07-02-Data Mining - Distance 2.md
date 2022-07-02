@@ -26,13 +26,8 @@ last_modified_at: 2022-07-02
     - 이때 $m$은 feature에 대해 같은 값의 개수이고, $p$는 전체 개수를 의미한다.  
     - 사실 위의 수식만 보고 이해하기가 쉽지 않기 때문에, 예를 한번 보도록 하자.  
 
-    
-    ||Blood Type|Hair Color|
-    |-|:-------:|:--------:|
-    |student 1|A|Black|
-    |student 2|B|Brown|
-    |student 3|B|Black|
-    |student 4|AB|Red|  
+    <p align="center"><img src="https://user-images.githubusercontent.com/65170165/176986208-14de889e-3996-4c85-aeeb-b8783d5f1784.png" width="350" /></p>  
+
       
     - 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
     $$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$$  
@@ -45,17 +40,13 @@ last_modified_at: 2022-07-02
       
 - <b>Use a large number of binary attributes</b>  
     - 각 nominal state에 대해 새로운 binary attribute를 생성하는 방법이다. 즉, categorical 형태로 주어진 각 feature들을 binary 형태로 바꿔주겠다는 의미이다. 이를 위 예시의 student 1과 student 2에 적용하면 아래와 같이 바뀐다. Blodd type A를 0으로, B를 1로 바꿔줬으며, Hair Color Black을 1로, Brown을 0으로 바꿔 나타내었다.  
-
-      
-    ||Blood Type|Hair Color|
-    |-|:-------:|:--------:|
-    |student 1|0|1|
-    |student 2|1|0|  
-
-      
+    <p align="center"><img src="https://user-images.githubusercontent.com/65170165/176986217-f579dbbb-adf8-440a-a0db-2f6fdaca02b7.png" width="350" /></p>  
     👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
+
     $$d(i,j)=\frac{(p-m)}{p}$$  
+
 * * *  
+
 ## 2. Categorical Attributes - Ordinal  
   
 - 위에서 다룬 nominal data와는 다르게 순위가 있는 자료형이다.  
@@ -108,14 +99,10 @@ $$d(i,j)=\frac{r+s}{q+r+s}$$
 $$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$$  
     - 이 경우에도 분모와 분자 모두에서 t가 빠진 것을 확인하자.  
   
-🧩 예시를 한번 살펴보도록 하자!!    
+🧩 예시를 한번 살펴보도록 하자!!  
 
 
-|name|gender|fever|cough|test_1|test_2|test_3|test_4|
-|-|:-------:|:--------:|:-:|:-:|:-:|:-:|:-:|
-|Jack|M|Y|N|P|N|N|N|
-|Jim|M|Y|Y|N|N|N|N|  
-|Marry|F|Y|N|P|N|P|N|  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/176986240-c0f486c9-e7d3-4625-abad-3849d8602d60.png" width="600" /></p>  
   
 👉 어떤 질병에 관련된 7개의 feature를 가진 3개의 object로 구성된 데이터임을 확인할 수 있다. 이때 gender는 symmetric한 특징을 가지고 있기 때문에 이는 제외하고 distance를 계산해 줄 것이다. 또한 test의 결과에서 나오는 P는 1로, N은 0으로 긴주한다. 이를 바탕으로 contingency table을 만들면 아래와 같다.  
   
