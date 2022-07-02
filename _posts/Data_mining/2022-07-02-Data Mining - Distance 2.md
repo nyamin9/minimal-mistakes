@@ -36,26 +36,35 @@ last_modified_at: 2022-07-02
     |student 4|AB|Red|  
       
 - 위에서 student 2와 3은 Blood Type은 같지만 Hair Color가 다르기 때문에  distance는 아래와 같다.  
+  
 <cneter>$d(s2,s3)=\frac{(2-1)}{2}=\frac{1}{2}$</center>  
+
       
 - 반면 student 2와 student 4는 두 feature가 모두 다르기 때문에 distacne는  다음과 같다.  
+  
 <center>$d(s2,s4)=\frac{(2-0)}{2}=1$</center>  
+
       
 - 이렇게 하면 간단하게 simple matching 을 통해 distance를 구할 수 있다.  
 
       
 - <b>Use a large number of binary attributes</b>  
+  
     - 각 nominal state에 대해 새로운 binary attribute를 생성하는 방법이다. 즉, categorical 형태로 주어진 각 feature들을 binary 형태로 바꿔주겠다는 의미이다. 이를 위 예시의 student 1과 student 2에 적용하면 아래와 같이 바뀐다. Blodd type A를 0으로, B를 1로 바꿔줬으며, Hair Color Black을 1로, Brown을 0으로 바꿔 나타내었다.  
+      
 
       
     ||Blood Type|Hair Color|
     |-|:-------:|:--------:|
     |student 1|0|1|
     |student 2|1|0|  
+    
 
       
 👉 그 후에 distance를 구하는 방법은 simple matching과 같다.  
+
 <center>$d(i,j)=\frac{(p-m)}{p}$<center>  
+  
 
 * * *  
   
