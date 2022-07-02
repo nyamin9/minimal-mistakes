@@ -118,13 +118,11 @@ $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된�
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/176984067-0e80896d-d1c4-45bf-ba7c-7315fcdec53c.png" width="600" /></p>  
   
 🧩 위의 공식에 따라서 distance를 구해보자.  
-<center>$d(i,j)=\frac{r+s}{q+r+s}$</center>  
-
-<center>$d(jack,jim)=\frac{1+1}{1+1+1}=0.67$</center>  
+<center>$d(i,j)=\frac{r+s}{q+r+s}\\d(jack,jim)=\frac{1+1}{1+1+1}=0.67\\d(jack,mary)=\frac{0+1}{2+0+1}=0.33\\d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center>   
 
 <center>$d(jack,mary)=\frac{0+1}{2+0+1}=0.33$</center>  
 
-  <center>$d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center>  
+<center>$d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center>  
 
 
 🧩 이렇게 해서 binary data에 대한 distance measure 역시 다뤄봤다. 고려해야 할 것도 있고, 그 경우마다 적용되는 공식도 살짝씩 달라지지만 서로 다른 것들로 distance를 계산하고 같은 것으로 similarity를 게산한다는 것만 생각하면 그렇게 어려운 개념은 아닐 것 같다.  
