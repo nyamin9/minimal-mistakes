@@ -68,7 +68,6 @@ last_modified_at: 2022-07-02
 
 * * *  
   
-  
 ## 2. Categorical Attributes - Ordinal  
   
 위에서 다룬 nominal data와는 다르게 순위가 있는 자료형이다.  
@@ -77,8 +76,8 @@ last_modified_at: 2022-07-02
   
   
     
-$$feature\;f와\;index\;\,i에\;대해서\;\;r_{if}∈{1,2,...,M_{if}}\\r_{if}\;는\;value의\;순위,\;M_{if}는\;전체개수$$
-$$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$$  
+<center>$feature\;f와\;index\;\,i에\;대해서\;\;r_{if}∈{1,2,...,M_{if}}\\r_{if}\;는\;value의\;순위,\;M_{if}는\;전체개수$</center>
+  <center>$Z_{if}=\frac{r_{if}-1}{M_{if}-1}$</center>  
 
 
 👉 수식만 보면 뭔가 복잡해보이는데, 그냥 단순히 순위를 매긴다고 생각하면 편할 것 같다. 예시를 한번 살펴보도록 하자.  
@@ -89,6 +88,7 @@ $Z_{if}=0\;\;/\;\;\frac{1}{3}\;\;/\;\;\frac{2}{3}\;\;/\;\;1$ 로 계산이 된�
 이 $Z$값을 바탕으로 해서 distance를 구하게 되는데, 그 계산은 단순 뺼셈 연산이다.  
   
 $d(freshman,senior) = 1-0=1$  
+  
 $d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$  
 * * *
 
@@ -109,16 +109,16 @@ $d(junior,senior) = 1-\frac{2}{3}=\frac{1}{3}$
 👉 이제 각각의 경우에 대한 distance를 구해보도록 하자.  
 
 🧩 Distance measure for <a>symmetric</a> binary variables  
-$$d(i,j)=\frac{r+s}{q+r+s+t}$$  
+  <center>$d(i,j)=\frac{r+s}{q+r+s+t}$</center>  
 
   
 🧩⭐Distance measure for <a>asymmetric</a> binary variables⭐  
-$$d(i,j)=\frac{r+s}{q+r+s}$$  
+  <center>$d(i,j)=\frac{r+s}{q+r+s}$</center>  
     - 분모에서 t가 빠진 것을 확인하자.    
 
   
 🧩⭐Similarity measure for <a>asymmetric</a> binary variables⭐  
-$$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$$  
+  <center>$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$</center>  
     - 이 경우에도 분모와 분자 모두에서 t가 빠진 것을 확인하자.  
   
 🧩 예시를 한번 살펴보도록 하자!!    
@@ -135,16 +135,16 @@ $$Jaccard\;\,coefficient=Sim_{jaccard}(i,j)=\frac{q}{q+r+s}$$
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/176984067-0e80896d-d1c4-45bf-ba7c-7315fcdec53c.png" width="600" /></p>  
   
 🧩 위의 공식에 따라서 distance를 구해보자.  
-$$d(i,j)=\frac{r+s}{q+r+s}$$  
+  <center>$d(i,j)=\frac{r+s}{q+r+s}$</center>  
 
   
-$$d(jack,jim)=\frac{1+1}{1+1+1}=0.67$$  
+<center>$d(jack,jim)=\frac{1+1}{1+1+1}=0.67$</center>
 
   
-$$d(jack,mary)=\frac{0+1}{2+0+1}=0.33$$  
+<center>$d(jack,mary)=\frac{0+1}{2+0+1}=0.33$</center>  
 
   
-$$d(jim,mary)=\frac{1+2}{1+1+2}=0.75$$  
+<center>$d(jim,mary)=\frac{1+2}{1+1+2}=0.75$</center>  
 
   
 🧩 이렇게 해서 binary data에 대한 distance measure 역시 다뤄봤다. 고려해야 할 것도 있고, 그 경우마다 적용되는 공식도 살짝씩 달라지지만 서로 다른 것들로 distance를 계산하고 같은 것으로 similarity를 게산한다는 것만 생각하면 그렇게 어려운 개념은 아닐 것 같다.  
