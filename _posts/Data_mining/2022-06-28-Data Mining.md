@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining 소개"
+title : "🧩 Data Mining(1) - 프롤로그"
 
 categories:
     - Data_mining

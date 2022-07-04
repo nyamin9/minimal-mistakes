@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (1) - Introduction"
+title : "🧩 Data Mining (2) - Introduction"
 
 categories:
     - Data_mining
