@@ -35,9 +35,10 @@ last_modified_at: 2022-07-06
 
 🧩 카이제곱검정을 통해 attirubute<sub>i</sub>와 attribute<sub>j</sub>에 대해서 두 feature 간의 correlation(연관성)이 있는가 알아보기 위해서는 한 가지 가설이 필요하다. 이를 우리는 <b><a>Null 가설</a></b>이라고 부를 것이다.<br>  
 
-    - Null hypothesis : 두 attribute i, j가 서로 독립이다. 즉, 서로 아무런 연관성이 없다.  
+⭐ Null hypothesis : 두 attribute i, j가 서로 독립이다. 즉, 서로 아무런 연관성이 없다.  
 
-👉 이제 카이제곱검정을 위한 준비를 모두 끝냈다. 본격적으로 알아보자.  
+👉 이제 카이제곱검정을 위한 준비를 모두 끝냈다. 본격적으로 알아보자.<br>  
+
 
 📝 <b>$χ^{2}-test$</b>  
 
@@ -80,7 +81,7 @@ last_modified_at: 2022-07-06
 
 마지막으로 chi-square값을 구해주자.  
 
-$χ^{2} = \frac{(250-90)^2}{90}+\frac{(200-360)^2}{360}+\frac{(50-210)^2}{210}+\frac{(1000-840)^2}{840}=507.93$<br>  
+<center>$χ^{2} = \frac{(250-90)^2}{90}+\frac{(200-360)^2}{360}+\frac{(50-210)^2}{210}+\frac{(1000-840)^2}{840}=507.93$</center><br>  
 
 👉 이 정도면 정말 말도 안되게 큰 값이다. 즉, 독립이라는 가정 (Null hypothesis) 하에서느 절대로 나올 수 없는 값이므로, <b>두 attribute가 서로 높은 correlation을 가진다는 의미</b>라고 할 수 있을 것이다.  
 
