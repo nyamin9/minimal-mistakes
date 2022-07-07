@@ -33,10 +33,12 @@ last_modified_at: 2022-07-06
 
 🧩 Data Integration의 정의도 알았으니 이제 첫번째 measure를 알아보도록 하자. 첫번째 방법은 범주형 데이터의 통합을 위한 <b><a>chi-square test</a></b><a> ($χ^2-test$)</a> 이다.<br>  
 
-🧩 카이제곱검정을 통해 attirubute<sub>i</sub>와 attribute<sub>j</sub>에 대해서 두 feature 간의 correlation(연관성)이 있는가 알아보기 위해서는 한 가지 가설이 필요하다. 이를 우리는 <b><a>Null 가설</a></b>이라고 부를 것이다.  
-    - Null hypothesis : 두 attribute i, j가 서로 독립이다. 즉, 서로 아무런 연괸성이 없다.  
+🧩 카이제곱검정을 통해 attirubute<sub>i</sub>와 attribute<sub>j</sub>에 대해서 두 feature 간의 correlation(연관성)이 있는가 알아보기 위해서는 한 가지 가설이 필요하다. 이를 우리는 <b><a>Null 가설</a></b>이라고 부를 것이다.<br>  
 
-👉 이제 카이제곱검정을 위한 준비를 모두 끝냈다. 본격적으로 알아보자.  
+⭐ Null hypothesis : 두 attribute i, j가 서로 독립이다. 즉, 서로 아무런 연관성이 없다.  
+
+👉 이제 카이제곱검정을 위한 준비를 모두 끝냈다. 본격적으로 알아보자.<br>  
+
 
 📝 <b>$χ^{2}-test$</b>  
 
@@ -65,7 +67,8 @@ last_modified_at: 2022-07-06
 
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/177465101-e8e1367c-7458-4430-a94c-98176d9fe1e4.png" width="600" /></p>  
 
-각 attribute를 정리한 값은 위의 표와 같다. 이를 바탕으로 각각의 $e_{ij}$를 구해보자.  
+각 attribute를 정리한 값은 위의 표와 같다. 이를 바탕으로 각각의 $e_{ij}$를 구해보자.<br>  
+
 
 <center>$e_{11} = \frac{M\times{Y}}{n} = \frac{450\times{300}}{1500}=90$</center><br>  
 <center>$e_{21} = \frac{F\times{Y}}{n} = \frac{1050\times{300}}{1500}=210$</center><br>  
@@ -78,7 +81,7 @@ last_modified_at: 2022-07-06
 
 마지막으로 chi-square값을 구해주자.  
 
-$χ^{2} = \frac{(250-90)^2}{90}+\frac{(200-360)^2}{360}+\frac{(50-210)^2}{210}+\frac{(1000-840)^2}{840}=507.93$<br>  
+<center>$χ^{2} = \frac{(250-90)^2}{90}+\frac{(200-360)^2}{360}+\frac{(50-210)^2}{210}+\frac{(1000-840)^2}{840}=507.93$</center><br>  
 
 👉 이 정도면 정말 말도 안되게 큰 값이다. 즉, 독립이라는 가정 (Null hypothesis) 하에서느 절대로 나올 수 없는 값이므로, <b>두 attribute가 서로 높은 correlation을 가진다는 의미</b>라고 할 수 있을 것이다.  
 
