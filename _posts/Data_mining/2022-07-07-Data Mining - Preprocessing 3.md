@@ -107,7 +107,7 @@ $σ_{12}=E(X_1X_2)-E(X_1)E(X_2)=\frac{(10+24+50+44+84)}{5}-4\times9.6 = 42.4-38.
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/177690493-b899569e-9474-4994-911b-d88e9b093fab.png" width="600" /></p>  
 
 
-⭐ <a><b>.corr 함수</a></b> 를 사용해서 각 attribute 간의 상관계수를 계산해주고, 파이썬의 seaborn 라이브러리를 사용하면 시각화까지 이쁘게 해주는 것을 확인 할 수 있다😊😊.  
+⭐ <a><b>.corr 함수</b></a> 를 사용해서 각 attribute 간의 상관계수를 계산해주고, 파이썬의 seaborn 라이브러리를 사용하면 시각화까지 이쁘게 해주는 것을 확인 할 수 있다😊😊.  
 
 * * *  
 
