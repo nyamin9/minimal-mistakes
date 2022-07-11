@@ -42,7 +42,7 @@ last_modified_at: 2022-07-11
 
 👉 이름은 어려워 보이지만 동작하는 알고리즘은 위에서 말한 기본적인 원리를 벗어나지 않는다. 가정에 의한 모델을 하나 만들고, 그에 대한 예측값을 구해 실제 값과의 Error를 계산한 뒤 오차를 최소화할수 있도록 파라미터를 업데이트하면 끝이다. 다만 여기서 유의할 점은 처음에 모델을 가정할 때 어느 정도는 데이터의 전체적인 개형과 비슷해야한다는 점과 Error를 계산하는 Method의 적절한 선택이 있을 것이다. 위에서 봤듯이 Linear Regression에서는 주로 LSM 을 사용할 텐데, 이제는 이에 대해 알아보도록 하자.<br>  
 
-⭐ $Least\;Squared\;Method : Residual\;Sum\;of\;Squares\;(RSS)$<br>  
+⭐ <b><a>$Least\;Squared\;Method : Residual\;Sum\;of\;Squares\;(RSS)$</a></b><br>  
 <center>$for\;\;y = \hat{β}_1x+\hat{β}_0,$</center><br>  
 <center>$RSS=E_1^2 + E_2^2+...+E_{n}^2\;=(y_1-(\hat{β}_1x_1+\hat{β}_0))^2+(y_2-(\hat{β}_1x_2+\hat{β}_0))^2+...+(y_n-(\hat{β}_1x_n+\hat{β}_0))^2$</center><br>  
 
@@ -51,12 +51,15 @@ last_modified_at: 2022-07-11
 최종적으로 이 Error를 최소화하는 파라미터를 찾아야 하는데, 그때 사용하는 방법은 아래와 같다.<br>  
 
 
-⭐ $Least\;Square\;Approach:\;Minimize\;RSS$<br>    
+⭐ <b><a>$Least\;Square\;Approach:\;Minimize\;RSS$</a></b><br>    
 <center>$\hat{β}_1=\frac{\sum{(x_i-\overline{x})(y_i-\overline{y})}}{\sum{(x_i-\overline{x})^2}}$</center><br>  
 
 <center>$\hat{β}_0=\overline{y}-\hat{β}_1\overline{x}$</center><br>  
 
-위의 수식에서 $\overline{x}$와 $\overline{y}$는 각각 독립변수와 종속변수의 평균을 의미한다. 각각의 식은 통계학에서도 나오는 과정이지만, 데이터마이닝에서 다루기에는 의도가 어긋날 수 있기 때문에 이번 포스팅은 간단히 여기서 끝내도록 하겠다.  
+위의 수식에서 $\overline{x}$와 $\overline{y}$는 각각 독립변수와 종속변수의 평균을 의미한다. 즉 예측값에서 원래 데이터에 대한 정보를 빼는 연산을 바탕으로 파라미터를 업데이트한다. 식은 복잡하지만, 그 의미와 연산 과정은 정말 간단한 원리로 구성되어 있는 것을 확인할 수 있다. 하지만 사람이 빅데이터에 대해서 저 연산을 하기에는 양이 너무 많기 때문에, 우리는 머신을 통해서 이 과정들을 수행할 수 있다. Linear Regression은 블로그에 더 자세하게 올려두었으니 아래 링크를 참고하면 좋을 것 같다👍👍.  
+
+📝 [머신러닝 - Linear Regression 포스팅 모음](https://nyamin9.github.io/categories/machinelearning)  
+
 
 * * *  
 
