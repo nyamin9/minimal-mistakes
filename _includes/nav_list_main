@@ -74,18 +74,32 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Statistics</span>
+        <span class="nav__sub-title">신약개발</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Statistics" %}
-                        <li><a href="/categories/statistics" class="">통계학 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Data_mining" %}
+                        <li><a href="/categories/data_mining" class="">데이터마이닝 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Data_mining" %}
-                        <li><a href="/categories/data_mining" class="">데이터마이닝 ({{category[1].size}})</a></li>
+                    {% if category[0] == "QSAR" %}
+                        <li><a href="/categories/qsar" class="">QSAR ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Sequence_analysis" %}
+                        <li><a href="/categories/sequence_analysis" class="">서열분석 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Protein_analysis" %}
+                        <li><a href="/categories/protein_analysis" class="">단백질분석 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
