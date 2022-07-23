@@ -39,11 +39,11 @@ last_modified_at: 2022-07-23
 
 🧩 10개의 attribute를 가지는 데이터가 있다고 생각해보자. 이 데이터에 대한 best subset은 다음과 같이 구해진다.<br>  
 
-<center>1. attribute가 하나도 없는 <a>null model</a> 생성 : $μ_0$</center><br>  
-<center>2. k = 1, 2,..., 10 에 대해서 각 k에 대해서 $_{10}C_k$의 모델을 생성함</center><br>  
-<center>3. 2의 과정을 통해서 $_{10}C_1 + _{10}C_2+...+_{10}C_10$개의 모델이 생성됨</center><br>  
-<center>4. k에 대해서 $_{10}C_k$ 개의 모델에서 제일 좋은 성능을 보이는 모델 $μ_k$을 하나씩 선정</center><br>  
-<center>5. 4에서 만들어진 $μ_1, μ_2,...,μ_10$ 중에서 단 하나의 Best Model을 선택함</center><br>  
+1. attribute가 하나도 없는 <a>null model</a> 생성 : $μ_0$<br>  
+2. k = 1, 2,..., 10 에 대해서 각 k에 대해서 $_{10}C_k$의 모델을 생성함<br>  
+3. 2의 과정을 통해서 $_{10}C_1 + _{10}C_2+...+_{10}C_10$개의 모델이 생성됨<br>  
+4. k에 대해서 $_{10}C_k$ 개의 모델에서 제일 좋은 성능을 보이는 모델 $μ_k$을 하나씩 선정<br>  
+5. 4에서 만들어진 $μ_1, μ_2,...,μ_10$ 중에서 단 하나의 Best Model을 선택함<br>  
 
 👉 요약하자면, 원본 데이터에서 가장 좋은 성능을 보이는 subset을 찾기 위해 가능한 모든 attribute 개수 조합을 모두 생성하고 평가하는 과정이다. 위에서는 attribute가 10개인 원본 데이터를 사용했지만, 실제로 우리가 다룰 데이터는 훨씬 거대한 데이터일 것이기 때문에 <a>연산과정이 너무 많다</a>는 단점은 더욱 크게 다가온다. 그래서 이렇게 모든 경우를 하나하나 체크하는 방법이 아닌 다른 방법이 생겨났으며, 이 방법을 바로 <a>Stepwise Selection</a>이라고 한다.  
 
@@ -68,7 +68,7 @@ last_modified_at: 2022-07-23
 🧩 이제 두번째 방법인 <a>Backward Stepwise Selection</a>에 대해 알아보도록 하자.  
 
 - <b>2. Backward Stepwise Selection</b><br>  
-    - 앞선 방법들과 달리 Null Model이 아닌 모든 attribute를 가지고 있는 Full Model부터 시작한다.<br>  
+    - 앞선 방법들과 달리 Null Model이 아닌 모든 attribute를 가지고 있는 <a>Full Model</a>부터 시작한다.<br>  
     - Full Model에서 가장 영향을 덜 주는 attribute부터 하나씩 제거하면서 모델을 업데이트한다.<br>  
     - 이 경우 역시 모델의 성능이 향상될 때까지만 업데이트가 이뤄진다.<br>  
     - 따라서 Local Optimum에 빠질 수 있다.<br>  
