@@ -16,7 +16,7 @@ last_modified_at: 2022-07-26
   
 * * *  
 
-🧩 저번 포스팅부터 Dimensionality Reduction을 다루고 있는데, 이번에는 꽃이라고 할수 있는 <a><b>Princiapl Component Analysis</b></a>에 대해서 알아보도록 하자🙃🙃.  
+🧩 저번 포스팅부터 Dimensionality Reduction을 다루고 있는데, 이번에는 꽃이라고 할수 있는 <a><b>Principal Component Analysis</b></a>에 대해서 알아보도록 하자🙃🙃.  
 
 * * *  
 
