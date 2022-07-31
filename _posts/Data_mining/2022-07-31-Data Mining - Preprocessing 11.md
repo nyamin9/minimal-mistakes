@@ -210,7 +210,7 @@ fig.show()
 
 ### 🚩 PCA DataFrame  
 
-🧩 마지막으로 위의 결과 선택된 <a>[ap_hi, ap_lo, BMI, gluc, cholestero]</a> attribute를 가지고 PCA DataFrame을 만들어보자🙂<br>.  
+🧩 마지막으로 위의 결과 선택된 <a>[ap_hi, ap_lo, BMI, gluc, cholestero]</a> attribute를 가지고 PCA DataFrame을 만들어보자🙂.<br>  
 
 
 ```py
