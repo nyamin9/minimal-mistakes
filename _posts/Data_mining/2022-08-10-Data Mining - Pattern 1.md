@@ -36,7 +36,7 @@ last_modified_at: 2022-08-10
 
 - 적용가능한 분야 : Market basket / Cross marketing / Catalog design / <a>Biological Sequence</a><br>  
 
-🧩 이렇게 해서 Pattern Discovery의 개념에 대해서 간략하게 알아보았다. 이제는 기본적인 용어들을 살펴보도록 하자.<br>  
+🧩 이렇게 Pattern Discovery의 개념에 대해서 간략하게 알아보았다. 이제는 기본적인 용어들을 살펴보도록 하자.<br>  
 
 ## 2. Pattern Doscovery 기초  
 
