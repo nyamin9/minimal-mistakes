@@ -85,7 +85,7 @@ last_modified_at: 2022-08-10
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
-<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
+<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
 
 
@@ -113,7 +113,7 @@ last_modified_at: 2022-08-10
     - $Y\rightarrow{X}(s,c) : c=sup(X\cup{Y})/sup(Y)$<br>  
     - $X\rightarrow{Y}(s,c)$ 에서 화살표의 시작 부분에 있는 itemset X가 confidence의 조건을 의미한다.<br>  
 
-🧩 이렇게 해서 support, confidence 라는 개념을 알아보았다. 이제는 Association Rule Mining을 알아보도록 하자🙄.<br>  
+🧩 이렇게 support, confidence 라는 개념을 알아보았다. 이제는 Association Rule Mining을 알아보도록 하자🙄.<br>  
 
 🧩 <a>Association Rule Mining</a> 에서는 두 개의 임계치를 사용한다. 아까 사용했던 <a>minsup</a>과 confidence에 대한 임계치인 <a>minconf</a> 이다. 그 목적은 minsup과 minconf를 만족하는 연관성을 파악하는 것이며, 최종적으로 그 연관성을 나타내는 모든 rule을 찾아야 한다.<br>  
 
@@ -133,7 +133,7 @@ last_modified_at: 2022-08-10
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
-<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
+<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
 이때 $minsup-50\%$ 이상인 itemset은 {Beer} {Nuts} {Diapper} {Eggs} {Beer,Diapper} 이다.<br>   
 
