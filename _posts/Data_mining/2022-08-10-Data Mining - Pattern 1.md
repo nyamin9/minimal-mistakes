@@ -100,7 +100,7 @@ last_modified_at: 2022-08-10
 
 📝 <b>Support</b><br>  
 - transaction 이 $X\cup{Y}$ 를 contain 할 확률. 즉, $X,Y$ 두 itemset을 모두 포함할 확률.<br>  
-- ex) $s\{Beer,Diapper\}=60\%$<br>  
+- ex) s{Beer,Diapper}=60%<br>  
 
 📝 <b>Confidence</b><br>  
 - conditional probability : $X\cup{Y}$ 에 대한 조건부확률<br>  
@@ -115,6 +115,8 @@ last_modified_at: 2022-08-10
 
 🧩 이렇게 support, confidence 라는 개념을 알아보았다. 이제는 Association Rule Mining을 알아보도록 하자🙄.<br>  
 
+* * *
+
 🧩 <a>Association Rule Mining</a> 에서는 두 개의 임계치를 사용한다. 아까 사용했던 <a>minsup</a>과 confidence에 대한 임계치인 <a>minconf</a> 이다. 그 목적은 minsup과 minconf를 만족하는 연관성을 파악하는 것이며, 최종적으로 그 연관성을 나타내는 모든 rule을 찾아야 한다.<br>  
 
 📝 <b>Association Rule Mining</b><br>  
@@ -126,18 +128,18 @@ last_modified_at: 2022-08-10
 
 🧩 위에서 사용한 Transaction Data를 가지고 Association Rule을 찾아보자.<br>  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/183826511-6b6a3a7b-a6e2-430e-8a6f-5f9537bfe4e6.png" width="700" /></p><br>  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/183826511-6b6a3a7b-a6e2-430e-8a6f-5f9537bfe4e6.png" width="700" /></p>  
 
-우선 minsup을 만족하는 itemset을 먼저 찾아보도록 하자.<br>  
+<b>1.</b> 우선 minsup을 만족하는 itemset을 먼저 찾아보도록 하자.<br>  
 
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
 <center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
-이때 $minsup-50\%$ 이상인 itemset은 {Beer} {Nuts} {Diapper} {Eggs} {Beer,Diapper} 이다.<br>   
+이때 $minsup = 50\%$ 이상인 itemset은 {Beer} {Nuts} {Diapper} {Eggs} {Beer,Diapper} 이다.<br>   
 
-minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
+<b>2.</b> minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
 
 <center>$Let\;\,minconf\;\;σ=50\%$</center><br>
 <center>$Beer\rightarrow{Diapper} : c=sup(Beer\cup{Diapper})/sup(Beer)=3/3=1$</center><br>  
@@ -148,7 +150,7 @@ minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하
 <center>$Beer\rightarrow{Diapper}(s,c)=(60\%,100\%)$</center><br>  
 <center>$Diapper\rightarrow{Beer}(s,c)=(60\%,75\%)$</center><br>  
 
-🚩 $Beer$가 선행조건인 경우와 $Diapper$가 선행조건인 경우 모두 minconf를 만족하기 때문에, 위의 Transaction Data에서 Association Rule은 다음과 같이 존재한다.  
+<b>3.</b> $Beer$가 선행조건인 경우와 $Diapper$가 선행조건인 경우 모두 minconf를 만족하기 때문에, 위의 Transaction Data에서 Association Rule은 다음과 같이 존재한다.  
 
 <center>$Beer\rightarrow{Diapper}\;\;\;\;\;and\;\;\;\;\;Diapper\rightarrow{Beer}$</center><br>  
   
@@ -165,6 +167,9 @@ minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하
 - Association Rule Mining<br>  
 
 에 대해서 알아보았다.  
+
+🧩 결론적으로 <a>Transaction Data</a> 의 <a>K-itemset</a> 으로부터 <a>support</a> 와 <a>confidence</a> 를 구하고, 그 값들을 바탕으로 <a>Association Rule Mining</a> 을 만족하는 rule을 찾는 것이 오늘 배운 내용의 목적이라 할 수 있을 것 같다. 하지만 오늘 설명을 위해 사용한 예제는 2-itemset이 최대인 경우였기 때문에, 다음 포스팅에서는 frequent pattern이 너무 많은 경우에 대해서 알아보도록 하자🏃‍♂️🏃‍♂️.  
+
 
 🧩 전처리나 Classification, Clustering은 평소에 공부하면서 어느정도 익숙한 느낌이 있었는데, 패턴분석은 지난 학기에 완전 처음 배운 내용이었고 오랜만에 공부하다 보니 많이 헷갈렸던 것 같다. 완전히 새로 배우는(...😨) 느낌이 나서 포스팅하는 데에 정말 많은 시간이 걸렸지만, 이렇게 정리하고 나니 그래도 어느 정도 정리되는 것 같아 좋았다. 앞으로의 패턴분석 내용이 이번 포스팅에서 다룬 개본적인 개념을 바탕으로 진행되기 때문에 나름 꼼꼼하게 정리했는데 어떨지 모르겠다. 아무쪼록 도움이 되면 좋겠다ㅎㅎ🙂🙂.  
 
