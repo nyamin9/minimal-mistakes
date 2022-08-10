@@ -45,14 +45,12 @@ last_modified_at: 2022-08-10
 - <a>itemset</a> : 하나 이상 itemset의 set  
 - <a>K-itemset</a> : K개로 구성된 itemset<br>  
 
-- <a>absolute-support</a><br>  
-
-    - $sup\{X\}$.   
+- <a>absolute-support</a> : $sup\{X\}$<br>  
+   
     - itemset X의 출현빈도. 얼마나 많이 등장했는가.  
     - Frequency<br>  
 
-- <a>relative-support</a><br>  
-    - $s\{X\}$.  
+- <a>relative-support</a> : $s\{X\}$<br>    
     - itemset X를 포함한 transaction의 비율.  
     - $\frac{Sup\{X\}}{total\;transaction}$<br>  
 
@@ -85,11 +83,11 @@ last_modified_at: 2022-08-10
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
-<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%</center><br>  
+<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
 
 
-👉 위의 예시에서 $minsup=50\%$ 이상의 <a>frequent</a> 한 itemset X는 $\{Beer\}\{Nuts\}\{Diapper\}\{Eggs\}\{Beer,Diapper\}$ 에 해당한다. 반면 $\{Milk\}$는 $40\%$ 로 $minsup$ 보다 작기 때문에 <a>frequent</a> 하지 않다. 여기서 주의깊게 봐야할 점이 있는데, 2-itemset $\{Beer,Diapper\}$ 가 frequent 하다는 것은 1-itemset $\{Beer\}\{Diapper\}$ 각각이 frequent하다는 것도 의미한다. 따라서 2-itemset의 frequent 를 판단함으로써 각 sub itemset의 frequent 역시 판단할 수 있다🙃🙃. 위의 예시에서 3개의 item 이 두 개 이상의 transaction에서 나오는 경우는 없기 때문에 2-itemset까지만 구해주었다.<br>  
+👉 위의 예시에서 $minsup=50\%$ 이상의 <a>frequent</a> 한 itemset X는 $\{Beer\}$$\{Nuts\}\{Diapper\}\{Eggs\}\{Beer,Diapper\}$ 에 해당한다. 반면 $\{Milk\}$는 $40\%$ 로 $minsup$ 보다 작기 때문에 <a>frequent</a> 하지 않다. 여기서 주의깊게 봐야할 점이 있는데, 2-itemset $\{Beer,Diapper\}$ 가 frequent 하다는 것은 1-itemset $\{Beer\}\{Diapper\}$ 각각이 frequent하다는 것도 의미한다. 따라서 2-itemset의 frequent 를 판단함으로써 각 sub itemset의 frequent 역시 판단할 수 있다🙃🙃. 위의 예시에서 3개의 item 이 두 개 이상의 transaction에서 나오는 경우는 없기 때문에 2-itemset까지만 구해주었다.<br>  
 
 * * *  
 
@@ -133,7 +131,7 @@ last_modified_at: 2022-08-10
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
-<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%</center><br>  
+<center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,$\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
 이때 $minsup-50\%$ 이상인 itemset은 $\{Beer\}\{Nuts\}\{Diapper\}\{Eggs\}\{Beer,Diapper\}$ 이다.<br>  
 
