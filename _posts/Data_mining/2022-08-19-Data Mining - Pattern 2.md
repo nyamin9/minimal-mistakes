@@ -52,7 +52,7 @@ last_modified_at: 2022-08-19
 <center><a>X ⊂ Y 인 itemset_X 가 frequent하고, X와 support 가 같은 itemset_Y가 존재하지 않아야 한다.</a></center>  
 <center><a>이때 우리는 itemset_X 가 closed 하다고 할 수 있으며, Y 는 Superset 이라고 할 수 있다.</a></center><br>  
 
-설명이 굉장히 난감쓰하다...😥 위의 트랜잭션 데이터를 사용해서 Closed Pattern을 찾아보자<br>  
+🧩 설명이 굉장히 난감쓰하다...😥 위의 트랜잭션 데이터를 사용해서 Closed Pattern을 찾아보자<br>  
 
 <center>itemset_X 를 {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>50</sub>} 이라 하면 X 의 support는 2 이며, itemset_Y 를 {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>100</sub>} 이라 하면 그때의 support는 1이다. 이때 X 는 Y의 부분집합이고, 두 itemset의 support가 서로 다르기 때문에 Y 를 superset 이라고 할 수 있으며, Closed Pattern 인 itemset_X {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>50</sub>} 가 T<sub>1</sub>과 T<sub>2</sub> 모두에 존재하기 때문에 우리가 구하는 closed pattern의 수는 2개가 된다.</center><br>  
 
@@ -69,7 +69,7 @@ last_modified_at: 2022-08-19
 <center><a>itemset_X 가 frequent하고, X ⊂ Y 인 frequent super pattern Y가 없으면</a></center>  
 <center><a>이때 우리는 itemset_X 가 max-pattern 이라고 할 수 있다.</a></center><br>  
 
-이 친구 역시 예제를 살펴보자.<br>  
+🧩 이 친구 역시 예제를 살펴보자.<br>  
 
 <center>위의 T<sub>1</sub>, T<sub>2</sub> 에서 max pattern의 개수는 다음과 같이 구해진다. 만약 Closed pattern을 구할 때 처럼 itemset_X 가 {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>50</sub>}가 되면 이를 포함하는 frequent super pattern Y가 얼마든지 존재할수 있기 때문에 이보다 큰 범위의 패턴을 찾아야 한다. 따라서 minsup = 1에 대해서 max-pattern을 구하면 {a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>100</sub>} 가 될수 있으며, 그때의 개수는 1개가 된다.</center><br>  
 
