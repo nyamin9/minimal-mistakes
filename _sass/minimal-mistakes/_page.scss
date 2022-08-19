@@ -30,6 +30,10 @@ body {
           flex-direction: column;
 }
 
+.utterances {
+  max-width: 100% !important;
+}
+
 .initial-content,
 .search-content {
   flex: 1 0 auto;
