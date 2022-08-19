@@ -57,8 +57,8 @@
 
   /* next/previous buttons */
   &--pager {
-    margin-top: 0em;
-    padding-top: 0em;
+    margin-top: 2em;
+    padding-top: 2em;
     display: block;
     padding: 1em 2em;
     //float: left;
@@ -68,7 +68,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: $muted-text-color;
+    color: #DDF584;
     border: 1px solid mix(#DDF584, $border-color, 25%);
     border-radius: $border-radius;
 
