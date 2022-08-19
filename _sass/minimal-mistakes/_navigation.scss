@@ -58,7 +58,7 @@
   /* next/previous buttons */
   &--pager {
     margin-top: 0;
-    padding-top: 0.25em;
+    padding-top: 0.35em;
     display: block;
     padding: 1em 2em;
     //float: left;
@@ -74,7 +74,7 @@
 
     .prev_next {
       font-family: $sans-serif;
-      color:#DDF584;
+      color:$border-color;
     }
   }
 }
