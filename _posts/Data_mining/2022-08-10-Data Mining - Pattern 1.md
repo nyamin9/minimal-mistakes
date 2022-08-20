@@ -146,7 +146,7 @@ last_modified_at: 2022-08-10
 
 * * *
 
-📌 <b>2.</b> minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
+📌 minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
 
 <center>$Let\;\,minconf\;\;σ=50\%$</center><br>
 <center>$Beer\rightarrow{Diapper} : c=sup(Beer\cup{Diapper})/sup(Beer)=3/3=1$</center><br>  
