@@ -98,6 +98,8 @@ last_modified_at: 2022-08-10
 
 🧩 Association Rule Mining 에 대해서 알아보기 전에 알아야 할 개념이 하나 있다. 이 친구 먼저 슬쩍 살펴보고 가도록 하자.<br>  
 
+* * *
+
 📝 <b>Support</b><br>  
 - transaction 이 $X\cup{Y}$ 를 contain 할 확률. 즉, $X,Y$ 두 itemset을 모두 포함할 확률.<br>  
 - ex) s{Beer,Diapper}=60%<br>  
@@ -113,7 +115,7 @@ last_modified_at: 2022-08-10
     - $Y\rightarrow{X}(s,c) : c=sup(X\cup{Y})/sup(Y)$<br>  
     - $X\rightarrow{Y}(s,c)$ 에서 화살표의 시작 부분에 있는 itemset X가 confidence의 조건을 의미한다.<br>  
 
-🧩 이렇게 support, confidence 라는 개념을 알아보았다. 이제는 Association Rule Mining을 알아보도록 하자🙄.<br>  
+🧩 support, confidence 라는 개념을 알아보았다. 이제는 Association Rule Mining을 알아보도록 하자🙄.<br>  
 
 * * *
 
@@ -125,32 +127,39 @@ last_modified_at: 2022-08-10
 - 함께 등장하는 itemset 간의 연관성을 파악해야 하므로 2-itemset이 존재해야 한다.<br>  
 
 - Find all rules : $X\rightarrow{Y}(s,c)\;\;that\;\;s\geq{minsup}\;\;and\;\;c\geq{minconf}$<br>  
+  
+* * *  
+
 
 🧩 위에서 사용한 Transaction Data를 가지고 Association Rule을 찾아보자.<br>  
 
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/183826511-6b6a3a7b-a6e2-430e-8a6f-5f9537bfe4e6.png" width="700" /></p>  
 
-<b>1.</b> 우선 minsup을 만족하는 itemset을 먼저 찾아보도록 하자.<br>  
+📌 우선 minsup을 만족하는 itemset을 먼저 찾아보도록 하자.<br>  
 
 <center>$Let\;\,minsup\;\;σ=50\%$</center><br>  
 <center>$s\{Beer\}=60\%\;\;\;,\;\;\;s\{Nuts\}=60\%$</center><br>  
 <center>$s\{Diapper\}=80\%\;\;\;,\;\;\;s\{Eggs\}=60\%$</center><br>  
 <center>$s\{Milk\}=40\%\;\;\;,\;\;\;s\{Beer,Diapper\}=60\%\;\;\;,\;\;\;s\{Nuts,Diapper\}=40\%$</center><br>  
 
-이때 $minsup = 50\%$ 이상인 itemset은 {Beer} {Nuts} {Diapper} {Eggs} {Beer,Diapper} 이다.<br>   
+📌 이때 $minsup = 50\%$ 이상인 itemset은 {Beer} {Nuts} {Diapper} {Eggs} {Beer,Diapper} 이다.<br>  
 
-<b>2.</b> minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
+* * *
+
+📌 <b>2.</b> minsup을 만족하는 itemset을 찾았으니 이번에는 minconf를 만족하는 itemset을 찾아야 한다. 두 임계치를 모두 만족하는 경우가 우리가 찾는 rule이기 때문에, 위에서 찾은 itemset에서 confidence를 계산하면 된다.<br>  
 
 <center>$Let\;\,minconf\;\;σ=50\%$</center><br>
 <center>$Beer\rightarrow{Diapper} : c=sup(Beer\cup{Diapper})/sup(Beer)=3/3=1$</center><br>  
 <center>$Diapper\rightarrow{Beer} : c=sup(Beer\cup{Diapper})/sup(Diapper)=3/4=0.75$</center><br>  
 
-이렇게 구한 support와 confidence로 Association Rule을 표현하면 아래와 같다.<br>  
+📌 이렇게 구한 support와 confidence로 Association Rule을 표현하면 아래와 같다.<br>  
 
 <center>$Beer\rightarrow{Diapper}(s,c)=(60\%,100\%)$</center><br>  
 <center>$Diapper\rightarrow{Beer}(s,c)=(60\%,75\%)$</center><br>  
 
-<b>3.</b> $Beer$가 선행조건인 경우와 $Diapper$가 선행조건인 경우 모두 minconf를 만족하기 때문에, 위의 Transaction Data에서 Association Rule은 다음과 같이 존재한다.  
+* * *
+
+📌 $Beer$가 선행조건인 경우와 $Diapper$가 선행조건인 경우 모두 minconf를 만족하기 때문에, 위의 Transaction Data에서 Association Rule은 다음과 같이 존재한다.  
 
 <center>$Beer\rightarrow{Diapper}\;\;\;\;\;and\;\;\;\;\;Diapper\rightarrow{Beer}$</center><br>  
   
