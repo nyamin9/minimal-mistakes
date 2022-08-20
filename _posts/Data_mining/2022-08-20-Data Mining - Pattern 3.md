@@ -37,7 +37,7 @@ last_modified_at: 2022-08-20
 🧩 Apriori Algorithm 을 이해하기 위해 우선적으로 알아야 할 패턴분석의 특징을 알아보자.  
 
 - <a>Apriori</a><br>  
-    - frequent itemset 의 모든 subset 은 반드시 frequent 해야 한다.  
+    - <span style="background-color:#ffdce0">frequent itemset 의 모든 subset 은 반드시 frequent 해야 한다.</span>  
     - 만약 itemset_S 의 어떤 subset이 infrequent 하면 S 역시 frequent 하지 않다.  
     - 즉 subset중 하나라도 infrequent하면, 그 itemset 역시 infrequent 하다.<br>  
 
@@ -60,7 +60,7 @@ last_modified_at: 2022-08-20
 
 ### 🚩 3.1. Apriori Algorithm - example  
 
-🧩 트랜잭션 데이터에 대해 <span style="background-color:#ffdce0">minsup = 2</span> 로 주어진 예시이며, 풀이에서 <a>$C_{n}$</a> 은 candidate-n-itemset을 의미하며, <a>$F_{n}$</a> 은 frequent-n-itemset 을 의미한다.<br>  
+🧩 트랜잭션 데이터에 대해 <span style="background-color:#ffdce0">minsup = 2</span> 로 주어진 예시이다. 풀이에서 <a>$C_{n}$</a> 은 candidate-n-itemset을 의미하며, <a>$F_{n}$</a> 은 frequent-n-itemset 을 의미한다.<br>  
 
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/185737293-f80e2f02-a6b8-46c0-bc8f-67163cd381cd.png" width="1000" /></p><br>  
 
