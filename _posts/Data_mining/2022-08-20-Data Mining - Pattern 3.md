@@ -58,6 +58,9 @@ last_modified_at: 2022-08-20
 
 🧩 예제를 하나 살펴보도록 하자!!  
 
+* * *  
+
+
 ### 🚩 3.1. Apriori Algorithm - example  
 
 🧩 트랜잭션 데이터에 대해 <span style="background-color:#ffdce0">minsup = 2</span> 로 주어진 예시이다. 풀이에서 <a>$C_{n}$</a> 은 candidate-n-itemset을 의미하며, <a>$F_{n}$</a> 은 frequent-n-itemset 을 의미한다.<br>  
