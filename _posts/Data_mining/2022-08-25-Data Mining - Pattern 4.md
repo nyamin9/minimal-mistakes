@@ -91,7 +91,7 @@ last_modified_at: 2022-08-25
 
 <center>$χ^2=\sum{\frac{(Observed-Expected)^2}{Expected}}\;\;\;when\;\;\;Expected=\frac{A\;\times{\;B}}{N}$</center><br>  
 
-<center>$and\;\;\;0\lt{χ^2}\lt{1}$</center><br>
+<center>$and\;\;\;0\lt{χ^2}\lt{\infin}$</center><br>
 
 🧩 그리고 이때 <span style="background-color:#ffdce0">chi-sqare 값이 클수록 두 itemset 간의 연관관계가 큼을 의미한다</span>. 즉, 독립이 아니다. 예시를 하나 보고 넘어가자.<br>  
 
