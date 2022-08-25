@@ -88,7 +88,7 @@ last_modified_at: 2022-08-25
 
 🧩 위에서 알아본 Lift는 그 값을 1을 기준으로 positive 한 관계가 있는지 negative 한 관계가 있는지를 파악하는 것이라면, Chi-square 는 단순히 연관관계가 있는지를 알아보기 위해 사용한다. 먼저 수식을 보도록 하자.<br>  
 
-<center>$χ^2=\sum{\frac{(Observed-Expected)^2}{Expected}}\;\;\;when\;\;\;Expected=\frac{A\;\times{\;B}}{N}$</center><br>  
+<center>📌 $χ^2=\sum{\frac{(Observed-Expected)^2}{Expected}}\;\;\;when\;\;\;Expected=\frac{A\;\times{\;B}}{N}$</center><br>  
 
 <center>$and\;\;\;0\lt{χ^2}\lt{\infty}$</center><br>
 
