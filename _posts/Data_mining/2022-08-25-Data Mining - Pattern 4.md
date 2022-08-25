@@ -48,25 +48,24 @@ last_modified_at: 2022-08-25
   
 
 ## 3. Interestingness Measures  
-
-***  
+ 
 
 ### 🚩 3.1. Lift  
   
 🧩 Lift는 각 itemset가 <span style="background-color:#ffdce0">서로 positive 하냐 negative 하냐에 따라</span> 그 연관관계를 파악하는 방법이다. 계산식은 아래와 같다.<br>  
 
 <center>📌 $Lift\;(A,\;B) = \frac{C\;(A\rightarrow{B})}{S\;(B)}=\frac{S\;({A}\cup{B})}{S\;(A)\;\times{\;S\;(B)}}$</center><br>  
-<center>$when\;\;S\;(A)=support\;(A)\;\;and\;\;C\;(A)=confidence\;(A)$</center><br>  
+<center>$when\;\;S(A)=support(A)\;\;and\;\;C(A)=confidence(A)$</center><br>  
 
 <center>그리고 이때,</center><br>  
 
 <center>$0\lt{Lift}\lt{\infty}$</center><br>  
 
-<center>$If\;\;Lift\;(A,B)=1,\;\;A\;\;and\;\;B\;\;is\;\;Independent\;\;each\;\;other$</center><br>  
+<center>$If\;\;Lift(A,B)=1,\;\;A\;\;and\;\;B\;\;is\;\;Independent\;\;each\;\;other$</center><br>  
 
-<center>$If\;\;Lift\;(A,B)\gt{1},\;\;A\;\;and\;\;B\;\;is\;\;Positively\;\;correlated$</center><br>  
+<center>$If\;\;Lift(A,B)\gt{1},\;\;A\;\;and\;\;B\;\;is\;\;Positively\;\;correlated$</center><br>  
 
-<center>$If\;\;Lift\;(A,B)\lt{1},\;\;A\;\;and\;\;B\;\;is\;\;Negatively\;\;correlated$</center><br>  
+<center>$If\;\;Lift(A,B)\lt{1},\;\;A\;\;and\;\;B\;\;is\;\;Negatively\;\;correlated$</center><br>  
 
 ***
 
