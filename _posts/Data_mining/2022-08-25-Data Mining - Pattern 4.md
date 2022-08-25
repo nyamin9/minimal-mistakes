@@ -37,10 +37,10 @@ last_modified_at: 2022-08-25
 
 🧩 이때 각 attribute의 itemset들 간의 관계를 알아볼 텐데, 일단 우리가 배운 건 support와 confidence 뿐이기 때문에 이를 통해서 구해보도록 하자.<br>  
 
-<center>🔑 $A\rightarrow{B}\;(support,\;\,confidence)$</center><br>  
+<center>🔑 $A\rightarrow{B}(support,\;\,confidence)$</center><br>  
 
-<center>📌 $1.\;\;Y\rightarrow{M}\;(400/1000,\;\,400/600)$</center><br>  
-<center>📌 $2.\;\;N\rightarrow{M}\;(350/1000,\;\,350/400)$</center><br>  
+<center>📌 $1.\;\;Y\rightarrow{M}(400/1000,\;\,400/600)$</center><br>  
+<center>📌 $2.\;\;N\rightarrow{M}(350/1000,\;\,350/400)$</center><br>  
 
 🧩 이 예시에서 우리가 알고 싶은 것은 <span style="background-color:#ffdce0">Male과 attribute B 간의 연관관계</span>이다. <📌<b>1</b>>을 먼저 살펴보면 전체 표본에 대한 Male의 비율은 $750/1000=75\%$ 인 반면에, 1의 조건에 의한 confidence는 $400/600=66.7\%$ 로 떨어진 것을 알 수 있다. 또한 <📌<b>2</b>>의 조건에 의한 confidence는 $350/400=87.5\%$ 로 상승한 것을 알 수 있다. <span style="background-color:#ffdce0">즉, Support와 Confidence는 그 표본이 달라짐에 따라서 알고자 하는 비율이 크게 변동한다. 따라서 그 값만 가지고는 attribute 간의 정확한 Association Rule을 알아내기 어렵다.</span><br>  
 
