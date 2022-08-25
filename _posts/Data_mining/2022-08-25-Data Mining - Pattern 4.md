@@ -55,16 +55,16 @@ last_modified_at: 2022-08-25
   
 🧩 Lift는 각 itemset가 <span style="background-color:#ffdce0">서로 positive 하냐 negative 하냐에 따라</span> 그 연관관계를 파악하는 방법이다. 계산식은 아래와 같다.<br>  
 
-<center>📌 $Lift\;(A,\;B) = \frac{c\;(A\rightarrow{B})}{s\;(B)}=\frac{s\;({A}\cup{B})}{s\;(A)\;\times{\;s\;(B)}}$</center><br>  
-<center>$when\;\;s\;(A)=support\;(A)\;\;and\;\;c\;(A)=confidence\;(A)$</center><br>  
+<center>📌 $Lift\;(A,\;B) = \frac{C\;(A\rightarrow{B})}{S\;(B)}=\frac{S\;({A}\cup{B})}{S\;(A)\;\times{\;S\;(B)}}$</center><br>  
+<center>$when\;\;S\;(A)=support\;(A)\;\;and\;\;C\;(A)=confidence\;(A)$</center><br>  
 
 <center>그리고 이때,</center><br>  
 
-<center>$0\lt{Lift}\lt{\infin}$</center><br>  
+<center>$0\lt{Lift}\lt{\infty}$</center><br>  
 
-<center>$If\;\;Lift\;(A,B)=1,\;\;A\;\;and\;\;B\;\;is\;\;Independent\;\;each\;\;other$</center>  
+<center>$If\;\;Lift\;(A,B)=1,\;\;A\;\;and\;\;B\;\;is\;\;Independent\;\;each\;\;other$</center><br>  
 
-<center>$If\;\;Lift\;(A,B)\gt{1},\;\;A\;\;and\;\;B\;\;is\;\;Positively\;\;correlated$</center>  
+<center>$If\;\;Lift\;(A,B)\gt{1},\;\;A\;\;and\;\;B\;\;is\;\;Positively\;\;correlated$</center><br>  
 
 <center>$If\;\;Lift\;(A,B)\lt{1},\;\;A\;\;and\;\;B\;\;is\;\;Negatively\;\;correlated$</center><br>  
 
@@ -91,7 +91,7 @@ last_modified_at: 2022-08-25
 
 <center>$χ^2=\sum{\frac{(Observed-Expected)^2}{Expected}}\;\;\;when\;\;\;Expected=\frac{A\;\times{\;B}}{N}$</center><br>  
 
-<center>$and\;\;\;0\lt{χ^2}\lt{\infin}$</center><br>
+<center>$and\;\;\;0\lt{χ^2}\lt{\infty}$</center><br>
 
 🧩 그리고 이때 <span style="background-color:#ffdce0">chi-sqare 값이 클수록 두 itemset 간의 연관관계가 큼을 의미한다</span>. 즉, 독립이 아니다. 예시를 하나 보고 넘어가자.<br>  
 
