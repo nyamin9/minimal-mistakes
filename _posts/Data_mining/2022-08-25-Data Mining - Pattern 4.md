@@ -51,6 +51,8 @@ last_modified_at: 2022-08-25
  
 
 ### 🚩 3.1. Lift  
+
+***
   
 🧩 Lift는 각 itemset가 <span style="background-color:#ffdce0">서로 positive 하냐 negative 하냐에 따라</span> 그 연관관계를 파악하는 방법이다. 계산식은 아래와 같다.<br>  
 
@@ -81,6 +83,8 @@ last_modified_at: 2022-08-25
 
 ***  
 ### 🚩 3.2. Chi-square ($χ^2-test$)  
+
+***
 
 🧩 Chi-square 에 대해서는 앞서서 데이터 전처리에 대해 배울때 이미 한번 짚었던 적이 있다. 링크를 첨부해 둘테니 이 포스팅과 같이 공부하면 도움이 될 것 같다.<br>  
 
