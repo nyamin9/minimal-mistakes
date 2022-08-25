@@ -74,9 +74,9 @@ last_modified_at: 2022-08-25
 
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/186563425-768fa30c-9cdd-48aa-8f13-e667b7d66b95.png" width="600" /></p>  
 
-<center>📌 $1.\;\;Lift\;(Y,M)=\frac{s\;(Y\cup{M})}{s\;(Y)\;\times{\;s\;(M)}}=\frac{400/1000}{(600/1000)\;\times\;(750/1000)}=0.89\;\;\rightarrow{Negatively\;\;correlated}$</center><br>  
+<center>📌 $1.\;\;Lift\;(Y,M)=\frac{S\;(Y\cup{M})}{S\;(Y)\;\times{\;S\;(M)}}=\frac{400/1000}{(600/1000)\;\times\;(750/1000)}=0.89\;\;\rightarrow{Negatively\;\;correlated}$</center><br>  
 
-<center>📌 $2.\;\;Lift\;(Y,F)=\frac{s\;(Y\cup{F})}{s\;(Y)\;\times{\;s\;(F)}}=\frac{200/1000}{(600/1000)\;\times\;(250/1000)}=1.33\;\;\rightarrow{Positively\;\;correlated}$</center><br>  
+<center>📌 $2.\;\;Lift\;(Y,F)=\frac{S\;(Y\cup{F})}{S\;(Y)\;\times{\;S\;(F)}}=\frac{200/1000}{(600/1000)\;\times\;(250/1000)}=1.33\;\;\rightarrow{Positively\;\;correlated}$</center><br>  
 
 🧩 위의 예시에서 얼핏 봤을 떄 정책의 찬반 여부에 좀 더 관련이 있어 보이는 성별은 M 이지만, 실제로 <span style="background-color:#ffdce0">Lift</span>를 통해 연관관계를 분석해보면 오히려 F가 더 positive한 관계가 있음을 알 수 있다.<br>  
 
