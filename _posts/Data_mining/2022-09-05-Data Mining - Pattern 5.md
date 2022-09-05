@@ -27,7 +27,7 @@ last_modified_at: 2022-09-05
 
 🧩 위의 데이터처럼 두 itemset이 모두 null 값을 가지는 경우에는 앞서서 배운 Lift와 chi-square test가 좋은 방법이 아닐 가능성이 크다. 따라서 앞서서 말했듯이 다른 방법들이 필요해졌고, 이때 사용하는 방법들과 수식은 아래와 같다.<br>  
 
-📌  $Allconf(A,B)\;\;=\;\;\frac{s(A\cup{B})}{max\{s(A),\,s(B)\}}\;\;and\;\;\;range\,:\,[0,1]$<br>  
+📌  $Allconf(A,B)\;\;=\;\;\frac{s(A\cup{B})}{max(s(A),\,s(B))}\;\;and\;\;\;range\,:\,[0,1]$<br>  
 
 📌 $Jaccard(A,B)\;\;=\;\;\frac{s(A\cup{B})}{s(A)+s(B)-s(A\cup{B})}\;\;and\;\;\;range\,:\,[0,1]$<br>  
 
@@ -35,11 +35,12 @@ last_modified_at: 2022-09-05
 
 📌 $Kulczynski(A,B)\;\;=\;\;\frac{1}{2}(\frac{s(A\cup{B})}{s(A)}+\frac{s(A\cup{B})}{s(B)})\;\;and\;\;\;range\,:\,[0,1]$<br>  
 
-📌 $MaxConf(A,B)\;\;=\;\;max\{\frac{s(A\cup{B})}{s(A)}, \frac{s(A\cup{B})}{s(B)}\}\;\;and\;\;\;range\,:\,[0,1]$<br>  
+📌 $MaxConf(A,B)\;\;=\;\;max(\frac{s(A\cup{B})}{s(A)}, \frac{s(A\cup{B})}{s(B)})\;\;and\;\;\;range\,:\,[0,1]$<br>  
 
 🧩  null transaction의 영향을 받지 않는 이러한 방법들을 통해서 itemset A와 B 사이의 보다 정확한 관계를 표현할 수가 있다. 이 중에서도 특히 <span style="background-color:#ffdce0">Kulczynski Measure</span> 를 많이 사용한다. 이는 <span style="background-color:#ffdce0">두 itemset이 서로 얼마나 중립적인 관계를 가지고 있는지를 나타내는 것으로, 그 값이 0.5에 가까울수록 neutral 하다고 할 수 있다. 결과적으로 이들의 관계가 positive한지, negative한지도 알 수 있는</span> 중요한 방법이다. 두 itemset 간의 관계를 잘 표현하기 위해 이 방법과 동시에 사용하는 Measure가 하나 있다. 이를 <span style="background-color:#ffdce0">Imbalance Ratio</span> 라고 하는데, 수식은 아래와 같다.<br>  
 
 📌 $Imbalanced\;Ratio\;=\;IR(A,B)\;=\;\frac{|s(A)-s(B)|}{s(A)+s(B)-s(A\cup{B})}\;\;and\;\;\;range\,:\,[0,1]$<br>  
+
 
 🧩 IR 은 <span style="background-color:#ffdce0">두 itemset 중 하나의 발생빈도가 다른 것의 발생빈도보다 큰지 작은지를 나타내는 measure</span> 이다. 값이 0에 가까울수록 balanced, 1에 가까울수록 imbalanced 라고 할 수 있다.<br>  
 
