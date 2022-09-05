@@ -41,7 +41,7 @@ last_modified_at: 2022-09-05
 
 
 
-📌 $Imbalanced\;Ratio\;=\;IR(A,B)\;=\;\frac{|s(A)-s(B)|}{s(A)+s(B)-s(A\cup{B})}\;\;and\;\;\;range\,:\,[0,1]$<br>  
+📌 $Imbalanced\;Ratio\;=\;IR(A,B)\;=\;\frac{\left\vert{s(A)-s(B)}\right\vert}{s(A)+s(B)-s(A\cup{B})}\;\;and\;\;\;range\,:\,[0,1]$<br>  
 
 
 
