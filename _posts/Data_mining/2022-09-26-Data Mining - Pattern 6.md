@@ -51,16 +51,16 @@ last_modified_at: 2022-09-26
 
 🐍 우리가 가지고 있는 데이터는 범주형 자료와 수치형 자료가 이것저것 섞여있다. 패턴 분석을 통해 규칙을 찾기 위해서는 데이터가 트랜잭션 데이터, 즉 Boolean 형태로 구성된 데이터여만 한다. 따라서 우리는 각 attribute들을 일정한 기준을 가지고 모두 범주화 한 뒤, 최종적으로 이렇게 범주화된 데이터를 Boolean 표현형으로 바꿔 트랜잭션 데이터를 구할 것이다.<br>  
 
-- 🐍 Support, Confidence 계산을 위해 데이터를 <b>transaction table 형태</b>로 변경  
+- 🐍 Support, Confidence 계산을 위해 데이터를 <b>transaction table 형태</b>로 변경<br>  
   - pre_tran : 각 attribute의 binary 값을 category 형태로 바꾼 dataframe 생성  
   - transaction : mlxtend 메소드의 transform 함수를 사용하여 boolean dataframe 생성<br>  
     
-- 🐍 Support ,Confidence 계산  
+- 🐍 Support, Confidence 계산<br>  
   - mlxtend.frequent_patterns 모듈의 apriori, association_rules 함수  
   - apriori() : itemsets 간의 Support를 계산하여 dataframe으로 반환 - 설정한 min_support를 만족하는 경우만 반환  
   - association_rules() 함수의 metric, min_threshold 옵션 : 설정한 metric이 min_threshold 이상인 경우만 반환<br>  
     
-- 🐍 우리가 찾고자 하는 것은 cardio와 영향을 미치는 attribute 간의 인과관계이기 때문에 cardio를 consequents로 하는 경우를 주로 살펴볼 예정임  
+- 🐍 우리가 찾고자 하는 것은 cardio와 영향을 미치는 attribute 간의 인과관계이기 때문에 cardio를 consequents로 하는 경우를 주로 살펴볼 예정임<br>  
   - confidence, Lift, support 순서로 우선순위를 설정  
   - min_confidence = 0.6 / Lift > 1 / min_support = 0.01  
   - support를 낮게 설정한 이유는 confidence와 Lift를 만족하는 경우에 antecedents의 support가 너무 작아 전체적인 support가 낮게 나오는 경우를 고려한 것이다.<br>  
@@ -94,38 +94,48 @@ def bmi(x):
 ```py
 # cardio 데이터 범주화
 pre_tran = cardio.copy()
+
 # gender : 1 2
 pre_tran = pre_tran.replace({'gender':1},'Women')
 pre_tran = pre_tran.replace({'gender':2},'Men')
+
 # cholesterol : 1 2 3
 pre_tran = pre_tran.replace({'cholesterol':1},'Normal_cho')
 pre_tran = pre_tran.replace({'cholesterol':2},'Above_Normal_cho')
 pre_tran = pre_tran.replace({'cholesterol':3},'Well_Above_Normal_cho')
+
 # gluc : 1 2 3
 pre_tran = pre_tran.replace({'gluc':1},'Normal_gluc')
 pre_tran = pre_tran.replace({'gluc':2},'Above_Normal_gluc')
 pre_tran = pre_tran.replace({'gluc':3},'Well_Above_Normal_gluc')
+
 # smoke : 0 1
 pre_tran = pre_tran.replace({'smoke':0},'No_Smoke')
 pre_tran = pre_tran.replace({'smoke':1},'Smoke')
+
 # alco : 0 1
 pre_tran = pre_tran.replace({'alco':0},'No_Alcohol')
 pre_tran = pre_tran.replace({'alco':1},'Alcohol')
+
 # active : 0 1
 pre_tran = pre_tran.replace({'active':0},'No_Active')
 pre_tran = pre_tran.replace({'active':1},'Active')
+
 # cardio : 0 1, target
 pre_tran = pre_tran.replace({'cardio':0},'No_cardio')
 pre_tran = pre_tran.replace({'cardio':1},'Cardio')
+
 # ap_hi가 140이상이면 HBP_SYS(고혈압), 그 외에는 NBP_SYS(정상)
 # ap_lork 90 이상이면 HBP_DIAS(고혈압), 그 외에는 NBP_DIAS(정상)
 pre_tran["ap_hi"] = np.where(pre_tran["ap_hi"] >=140, 'HBP_SYS', 'NBP_SYS')
 pre_tran["ap_lo"] = np.where(pre_tran["ap_lo"] >=90, 'HBP_DIAS', 'NBP_DIAS')
+
 # age : 연령대로 분류
 pre_tran.loc[pre_tran['age'] // 10 == 3, 'age'] = 30
 pre_tran.loc[pre_tran['age'] // 10 == 4, 'age'] = 40
 pre_tran.loc[pre_tran['age'] // 10 == 5, 'age'] = 50
 pre_tran.loc[pre_tran['age'] // 10 == 6, 'age'] = 60
+
 # BMI : 앞서 생성한 BMI 함수 사용
 pre_tran['BMI'] = pre_tran['BMI'].apply(bmi)
 print('row : ', len(pre_tran))
@@ -151,10 +161,12 @@ columns :  11
 # transaction table 생성
 # mlxtend.preprocessing 모듈의 TransactionEncoder 임포트
 from mlxtend.preprocessing import TransactionEncoder
+
 # transaction 데이터 생성
 # 범주형 데이터를 mlxtend 메소드의 transform 함수에 넣기 위해 list형태로 변환 : trans_data
 trans_data = np.array(pre_tran)
 trans_data = np.array(trans_data.tolist())
+
 # transform() 함수로 trans_data가 one-hot encoding 된 형태의 boolean list를 te_ary로 받음
 # te_ary를 데이터프레임 형태로 변환하여 transaction data 생성 
 # transaction : attribute의 각 category에 대한 value를 column으로 받음
