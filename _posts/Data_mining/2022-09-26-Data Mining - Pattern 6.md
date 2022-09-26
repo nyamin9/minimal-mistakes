@@ -49,7 +49,7 @@ last_modified_at: 2022-09-26
       
 ## 2. Preprocessing  
 
-🐍 우리가 가지고 있는 데이터는 범주형 자료와 수치형 자료가 이것저것 섞여있다. 패턴 분석을 통해 규칙을 찾기 위해서는 데이터가 트랜잭션 데이터, 즉 Boolean 형태로 구성된 데이터여만 한다. 따라서 우리는 각 attribute들을 일정한 기준을 가지고 모두 범주화 한 뒤, 최종적으로 이렇게 범주화된 데이터를 Boolean 표현형으로 바꿔 트랜잭션 데이터를 구할 것이다.<br>  
+🐍 우리가 가지고 있는 데이터는 범주형 자료와 수치형 자료가 이것저것 섞여있다. 패턴 분석을 통해 규칙을 찾기 위해서는 데이터가 <span style="background-color:#ffdce0">트랜잭션 데이터, 즉 Boolean 형태로 구성된 데이터</span>여만 한다. 따라서 우리는 각 attribute들을 일정한 기준을 가지고 모두 범주화 한 뒤, 최종적으로 이렇게 범주화된 데이터를 Boolean 표현형으로 바꿔 트랜잭션 데이터를 구할 것이다.<br>  
 
 - 🐍 Support, Confidence 계산을 위해 데이터를 <span style="background-color:#ffdce0">transaction table 형태</span>로 변경<br>  
   - pre_tran : 각 attribute의 binary 값을 category 형태로 바꾼 dataframe 생성  
