@@ -37,12 +37,12 @@ last_modified_at: 2022-09-26
   - 신뢰도
   - x를 포함하는 거래 내역 중, y가 포함된 비율
   - 규칙의 신뢰도에 대한 척도
-  - P(Y|X)<br>  
+  - P(Y\|X)<br>  
     
 - 🐍 <b>Lift</b> 
   - 신뢰도의 결과가 0.9라고 가정하였을 때 p(Y)가 0.9면 x,y가 서로 독립이 되기 때문에 x는 y를 설명하는 데에 아무런 도움을 줄수 없음
   - 규칙이 진짜 의미가 있는지 확인하기 위한 척도
-  - P(Y|X) / P(Y)
+  - P(Y\|X) / P(Y)
     - Lift = 1 : x와 y는 아무 관계가 없음. 독립.
     - Lift > 1 : x가 y의 발생 증가를 예측하는 데에 도움이 됨. (양의 상관관계).
     - Lift < 1 : x가 y의 발생 감소를 예측하는 데에 도움이 됨. (음의 상관관계).<br>  
@@ -51,18 +51,20 @@ last_modified_at: 2022-09-26
 
 🐍 우리가 가지고 있는 데이터는 범주형 자료와 수치형 자료가 이것저것 섞여있다. 패턴 분석을 통해 규칙을 찾기 위해서는 데이터가 트랜잭션 데이터, 즉 Boolean 형태로 구성된 데이터여만 한다. 따라서 우리는 각 attribute들을 일정한 기준을 가지고 모두 범주화 한 뒤, 최종적으로 이렇게 범주화된 데이터를 Boolean 표현형으로 바꿔 트랜잭션 데이터를 구할 것이다.<br>  
 
-- 🐍 Support, Confidence 계산을 위해 데이터를 <b>transaction table 형태</b>로 변경<br>  
+- 🐍 Support, Confidence 계산을 위해 데이터를 <span style="background-color:#ffdce0">transaction table 형태</span>로 변경<br>  
   - pre_tran : 각 attribute의 binary 값을 category 형태로 바꾼 dataframe 생성  
   - transaction : mlxtend 메소드의 transform 함수를 사용하여 boolean dataframe 생성<br>  
     
 - 🐍 Support, Confidence 계산<br>  
-  - mlxtend.frequent_patterns 모듈의 apriori, association_rules 함수  
-  - apriori() : itemsets 간의 Support를 계산하여 dataframe으로 반환 - 설정한 min_support를 만족하는 경우만 반환  
-  - association_rules() 함수의 metric, min_threshold 옵션 : 설정한 metric이 min_threshold 이상인 경우만 반환<br>  
+  - <span style="background-color:#ffdce0">mlxtend.frequent_patterns 모듈의 apriori, association_rules 함수</span>  
+  - <span style="background-color:#ffdce0">apriori()</span> : itemsets 간의 Support를 계산하여 dataframe으로 반환  
+    - 설정한 min_support를 만족하는 경우만 반환  
+  - <span style="background-color:#ffdce0">association_rules() 함수의 metric, min_threshold 옵션</span>  
+    - 설정한 metric이 min_threshold 이상인 경우만 반환<br>  
     
 - 🐍 우리가 찾고자 하는 것은 cardio와 영향을 미치는 attribute 간의 인과관계이기 때문에 cardio를 consequents로 하는 경우를 주로 살펴볼 예정임<br>  
   - confidence, Lift, support 순서로 우선순위를 설정  
-  - min_confidence = 0.6 / Lift > 1 / min_support = 0.01  
+  - <span style="background-color:#ffdce0">min_confidence = 0.6 / Lift > 1 / min_support = 0.01</span>  
   - support를 낮게 설정한 이유는 confidence와 Lift를 만족하는 경우에 antecedents의 support가 너무 작아 전체적인 support가 낮게 나오는 경우를 고려한 것이다.<br>  
 
 ## 3. Code  
