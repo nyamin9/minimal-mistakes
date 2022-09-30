@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (26) - Pattern_6 : Project_Support, Confidence, Lift"
+title : "🧩 Data Mining (26) - Pattern_6 : Project_Support, Confidence, Lift_(1)"
 
 categories:
     - Data_mining
