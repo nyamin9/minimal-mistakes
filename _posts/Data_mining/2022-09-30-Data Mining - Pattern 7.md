@@ -21,10 +21,10 @@ last_modified_at: 2022-09-30
 
 ***
 
-📌 <b>1. pre_tran : 수치형/범주형 attribute가 섞여있던 원래 데이터를 범주형 데이터로 만든 것</b>  
+📌 <span style="background-color:#ffdce0">1. pre_tran : 수치형/범주형 attribute가 섞여있던 원래 데이터를 범주형 데이터로 만든 것</span>  
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/190163699-df8dfc0b-70a4-4447-ba27-52dc3c1113ef.png" width="1000" /></p><br>  
 
-📌 <b>2. transaction : pre_tran을 사용하여 만든 최종 트랜잭션 데이터 - Boolean 표현형</b>  
+📌 <span style="background-color:#ffdce0">2. transaction : pre_tran을 사용하여 만든 최종 트랜잭션 데이터 - Boolean 표현형</span>  
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/190164777-82916228-210e-4990-9c4b-c32433538ad1.png" width="1500" /></p>  
 
 ***  
