@@ -230,7 +230,7 @@ fig.show()
 
 ### 📌 2.3. BMI / Cardio  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171838819-58902551-f820-45d9-880b-18d2011d5cee.png" width="1500" /></p><br>  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171838819-58902551-f820-45d9-880b-18d2011d5cee.png" width="1500" /></p>  
 
 🚩  설정한 기준인 min_confidence = 0.6 / Lift > 1 / min_support = 0.01 를 만족하는 경우가 있기 때문에 연관성이 있다고 볼 수 있다.<br>  
 
