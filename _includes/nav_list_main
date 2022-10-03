@@ -8,7 +8,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            📂 <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
+            🗂️ <span style="font-family:'Cafe24Oneprettynight';">전체 글 수</style> <span style="font-family:'Coming Soon';">{{sum}}</style> <span style="font-family:'Cafe24Oneprettynight';">개</style> 
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
@@ -27,6 +27,13 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Bio_practice" %}
                         <li><a href="/categories/bio_practice" class="">Bioinformatics 실습 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "QSAR" %}
+                        <li><a href="/categories/qsar" class="">QSAR ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -74,7 +81,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">신약개발</span>
+        <span class="nav__sub-title">데이터 이론</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Data_mining" %}
@@ -84,22 +91,8 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "QSAR" %}
-                        <li><a href="/categories/qsar" class="">QSAR ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Sequence_analysis" %}
-                        <li><a href="/categories/sequence_analysis" class="">서열분석 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Protein_analysis" %}
-                        <li><a href="/categories/protein_analysis" class="">단백질분석 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Statistics" %}
+                        <li><a href="/categories/data_mining" class="">통계학 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
