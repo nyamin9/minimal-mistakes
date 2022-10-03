@@ -19,7 +19,9 @@ last_modified_at: 2022-10-03
 
 🐍 저번 글에서는 support, confidence, lift를 가지고 각 attribute 간의 패턴을 알아보았다. 이번 글에서는 이 수치들이 가질 수 있는 문제들을 해결하기 위한 <b>Null-Invariant Measures</b>를 사용하여 패턴을 분석할 것이다.<br>  
 
-🐍 코드 진행의 이해를 위해 이번 글에서 사용할 데이터프레임을 먼저 보도록 하자.<br>  
+🐍 코드 진행의 이해를 위해 이번 글에서 사용할 데이터프레임을 먼저 보도록 하자.  
+
+***
 
 📌 <b>1. pre_tran : 수치형/범주형 attribute가 섞여있던 원래 데이터를 범주형 데이터로 만든 것</b>  
 <p align="center"><img src="https://user-images.githubusercontent.com/65170165/190163699-df8dfc0b-70a4-4447-ba27-52dc3c1113ef.png" width="1000" /></p><br>  
