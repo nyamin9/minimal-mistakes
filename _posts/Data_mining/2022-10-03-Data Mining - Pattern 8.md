@@ -33,14 +33,14 @@ last_modified_at: 2022-10-03
 
 ## 1. Null-Invariant Measures 개념  
 
-🐍 transaction dataframe에서 Null data의 개수가 많은 경우를 미연에 방지하기 위해서 Null Invariant한 metric 사용<br>  
+🐍 transaction dataframe에서 Null data의 개수가 많은 경우를 방지하기 위해서 Null Invariant한 metric 사용<br>  
 
 🐍 Jaccard, kulczynski, IR, chi-square, p-value 사용<br>  
 
 - <b>Jaccard</b> : 교집합/합집합. 두 집합이 동일하면 1, 공통의 원소가 하나도 없으면 0  
 - <b>kulczynski</b> : (0.5) * ((교집합/X) + (교집합/Y)). 두 집합이 동일하면 1, 공통의 원소가 하나도 없으면 0  
   - 0.5를 기준으로 두 집합의 관계가 negative인지 positive 인지 알 수 있음.  
-- <b>IR</b> : |X-Y| / 합집합. 데이터의 분포 형태를 파악하는 데 사용.  
+- <b>IR</b> : \|X-Y\| / 합집합. 데이터의 분포 형태를 파악하는 데 사용.  
 - <b>chi-square</b> : 데이터의 연관관계 분석. 클수록 연관성이 깊은 집합임.  
 - <b>p-value</b> : 유의확률을 제공해서 대립가설을 채택할 수 있는지 판단가능.  
   
