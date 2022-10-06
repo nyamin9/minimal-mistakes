@@ -75,6 +75,7 @@ for i in range(len(transaction.columns)):
 # chi-square와 p-value, jaccard, kulczynski, IR을 하나의 데이터프레임으로 통합 - Null_inv
 Null_inv = pd.merge(Null_inv, chi_list, how = 'outer', left_index=True, right_index=True)
 Null_inv = Null_inv.drop(['Cardio & cardio', 'No_cardio & cardio'], axis = 0)
+
 # kulczynski를 기준으로 큰 순서부터 나열
 Null_inv = Null_inv.sort_values('kulczynski', ascending = False)
 Null_inv
@@ -92,19 +93,24 @@ Null_inv
 import plotly.graph_objects as go
 import plotly.offline as pyo
 pyo.init_notebook_mode()
+
 # Transaction Data의 Attribute-Cardio 별 Kulczynski / IR 값 시각화
 fig = go.Figure()
+
 fig.add_trace(
     go.Scatter(
     x = Null_inv.index, y = Null_inv['IR'], mode = 'markers+lines+text', name = 'IR'))
+    
 fig.add_trace(
     go.Scatter(
     x = Null_inv.index, y = Null_inv['kulczynski'], mode = 'markers+lines+text', name = 'Kulczynski'))
+    
 fig.update_layout(
     {
         'title' : {'text':'Attribute-Cardio 별 Kulczynski / IR 값', 'font':{'size' : 25}},
         'template' : 'plotly_white'
     })
+    
 fig.add_hline(y=0.5, line_dash="dot",
               line_color = "#ff0000",
               annotation_text="Kulczynski = 0.5", 
@@ -112,6 +118,7 @@ fig.add_hline(y=0.5, line_dash="dot",
               annotation_font_size=17,
               annotation_font_color="black"
              )
+             
 fig.show()
 ```  
 
