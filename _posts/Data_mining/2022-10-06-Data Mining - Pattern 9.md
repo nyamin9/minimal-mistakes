@@ -128,18 +128,18 @@ fig.show()
 
 ## 3. Null-Invariant Measures 결과  
 
-- kulczynski, IR, chi-square 값으로 몇가지 유추가 가능하다.  
+- <span style="background-color:#ffdce0">kulczynski, IR, chi-square 값으로 몇가지 유추가 가능하다.</span>  
   - (1) 30 & cardio : kulczynski = 0.109444, IR = 0.980692, chi-square = 111.024261 이므로 둘의 관계는 negative하며, 두 집합의 분포가 imbalanced 하다.  
   - (2) HBP_SYS & cardio : kulczynski = 0.640039, IR = 0.431196, chi-square = 10586.494635 이므로 둘의 관계는 positive하고, 두 집합의 분포 역시 어느정도 고르다.<br>  
     
-- kulczynski의 결과가 0.5를 기준으로 나뉘고, 그에 따른 IR로부터 몇가지 결과를 얻을 수 있다.  
+- <span style="background-color:#ffdce0">kulczynski의 결과가 0.5를 기준으로 나뉘고, 그에 따른 IR로부터 몇가지 결과를 얻을 수 있다.</span>  
   - 이때 IR의 값이 하나의 categroy가 가지는 값에 대해서 다양하게 나오고 있으므로, 집합들 사이의 분포가 고르지 않은 경우가 많음을 알 수 있음.  
-  - 따라서 전체 데이터 크기에 대한 분포의 영향(e.x. BMI -> HIGH_OBESITY)을 배제할 수 없기 때문에 kulczynski와 IR 값만으로 attribute를 선택하는 것은 어려움.  
+  - <span style="background-color:#ffdce0">따라서 전체 데이터 크기에 대한 분포의 영향(e.x. BMI -> HIGH_OBESITY)을 배제할 수 없기 때문에 kulczynski와 IR 값만으로 attribute를 선택하는 것은 어려움.</span>  
   - 그럼에도 일단 kulczynski와 IR 값으로 선택한 attribute는 다음과 같음.  
   - [ap_hi, ap_lo, gluc, gender, active, age, cholesterol]  
     
 - 전체적으로 큰 chi-square값을 보이나, 그에 비해 작은 결과를 나타내는 attribute를 제외하면 남은 attribute는 아래와 같음.  
-  - [age, ap_hi, ap_lo, cholesterol, gluc, active, BMI]<br>  
+  - <span style="background-color:#ffdce0">[age, ap_hi, ap_lo, cholesterol, gluc, active, BMI]</span><br>  
   
 ***  
 
@@ -151,9 +151,9 @@ fig.show()
 
 🧩 이번 포스팅과 지난 세 개의 포스팅을 통해서 프로젝트 진행을 위해 사용한 패턴 분석에 대해서 알아보았다. 혹시나 더 궁금하신 분들을 위해 아래에 지난 링크들을 남겨놓을 테니, 참고하시면 좋을 것 같다😊😊.  
 
-[📝Project 1]('https://nyamin9.github.io/data_mining/Data-Mining-Pattern-6/')  
-[📝Project 2]('https://nyamin9.github.io/data_mining/Data-Mining-Pattern-7/')  
-[📝Project 3]('https://nyamin9.github.io/data_mining/Data-Mining-Pattern-8/')  
+[📝Project 1](https://nyamin9.github.io/data_mining/Data-Mining-Pattern-6/)  
+[📝Project 2](https://nyamin9.github.io/data_mining/Data-Mining-Pattern-7/)  
+[📝Project 3](https://nyamin9.github.io/data_mining/Data-Mining-Pattern-8/)  
 
 * * *  
 
