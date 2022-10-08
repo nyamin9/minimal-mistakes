@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (21) - Pattern_1 : Preview"
+title : "🧩 데이터마이닝 (21) - 패턴분석_1 : Preview"
 
 categories:
     - Data_mining
