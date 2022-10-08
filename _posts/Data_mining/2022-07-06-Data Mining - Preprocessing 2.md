@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (9) - Preprocessing_2 : Data Integration - chi-square test"
+title : "🧩 데이터마이닝 (9) - 데이터 전처리_2 : Data Integration - chi-square test"
 
 categories:
     - Data_mining
