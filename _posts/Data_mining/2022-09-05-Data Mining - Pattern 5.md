@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (25) - Pattern_5 : Pattern Evaluation (2)"
+title : "🧩 데이터마이닝 (25) - 패턴분석_5 : Pattern Evaluation (2)"
 
 categories:
     - Data_mining
