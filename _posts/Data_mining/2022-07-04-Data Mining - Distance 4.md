@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (7) - Distance_4 : Cosine 유사도"
+title : "🧩 데이터마이닝 (7) - Distance_4 : Cosine 유사도"
 
 categories:
     - Data_mining
