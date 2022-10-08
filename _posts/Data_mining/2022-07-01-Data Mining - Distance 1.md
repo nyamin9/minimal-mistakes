@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (4) - Distance_1 : Distance Matrix"
+title : "🧩 데이터마이닝 (4) - Distance_1 : Distance Matrix"
 
 categories:
     - Data_mining
