@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (6) - Distance_3 : Minkowski"
+title : "🧩 데이터마이닝 (6) - Distance_3 : Minkowski"
 
 categories:
     - Data_mining
