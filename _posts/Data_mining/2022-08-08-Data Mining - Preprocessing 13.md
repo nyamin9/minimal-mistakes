@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (20) - Preprocessing_13 : Review"
+title : "🧩 데이터마이닝 (20) - 데이터 전처리_13 : Review"
 
 categories:
     - Data_mining
