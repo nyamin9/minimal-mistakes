@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (22) - Pattern_2 : Many Frequent Patterns"
+title : "🧩 데이터마이닝 (22) - 패턴분석_2 : Many Frequent Patterns"
 
 categories:
     - Data_mining
