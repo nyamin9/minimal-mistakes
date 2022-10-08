@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (19) - Preprocessing_12 : Data Transformation"
+title : "🧩 데이터마이닝 (19) - 데이터 전처리_12 : Data Transformation"
 
 categories:
     - Data_mining
