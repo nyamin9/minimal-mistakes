@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (13) - Preprocessing_6 : Data Reduction - Nonlinear Regression"
+title : "🧩 데이터마이닝 (13) - 데이터 전처리_6 : Data Reduction - Nonlinear Regression(비선형회귀)"
 
 categories:
     - Data_mining
