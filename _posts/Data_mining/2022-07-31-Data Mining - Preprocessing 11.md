@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (18) - Preprocessing_11 : Data Reduction - PCA_2"
+title : "🧩 데이터마이닝 (18) - 데이터 전처리_11 : Data Reduction - PCA_2"
 
 categories:
     - Data_mining
