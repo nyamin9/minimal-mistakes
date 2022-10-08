@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (12) - Preprocessing_5 : Data Reduction - Linear Regression"
+title : "🧩 데이터마이닝 (12) - 데이터 전처리_5 : Data Reduction - Linear Regression (선형회귀)"
 
 categories:
     - Data_mining
