@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (28) - Pattern_8 : Project_Null Invariant Measure (1)"
+title : "🧩 데이터마이닝 (28) - 패턴분석_8 : Project_Null Invariant Measure (1)"
 
 categories:
     - Data_mining
