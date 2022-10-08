@@ -1,5 +1,5 @@
 ---
-title : "🧩 Data Mining (5) - Distance_2 : Categorical / Binary"
+title : "🧩 데이터마이닝 (5) - Distance_2 : Categorical / Binary"
 
 categories:
     - Data_mining
