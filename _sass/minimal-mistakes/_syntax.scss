@@ -6,7 +6,7 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: #f1f3f5;
+  background: #231E18;
   color: $base03;
   font-family: $monospace;
   font-size: $type-size-6;
@@ -35,8 +35,8 @@ figure.highlight {
     &.rouge-gutter {
       padding-right: 1em;
       width: 1em;
-      color: $base04;
-      border-right: 1px solid $base04;
+      color: #CABCB1;
+      border-right: 1px solid #CABCB1;
       text-align: right;
       // 라인이 복사되지 않게 한다.
       -webkit-touch-callout: none;
@@ -69,7 +69,7 @@ figure.highlight {
 .highlight {
   .c {
     /* Comment */
-    color: $base04;
+    color: #CABCB1;
   }
   .err {
     /* Error */
@@ -81,7 +81,7 @@ figure.highlight {
   }
   .l {
     /* Literal */
-    color: $base09;
+    color: #B7BA53;
   }
   .n {
     /* Name */
