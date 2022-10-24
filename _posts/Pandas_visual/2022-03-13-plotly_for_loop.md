@@ -84,7 +84,8 @@ fig.add_trace(
 
 fig.show()
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/158064657-e01f137e-f104-4297-a661-a9d38a0d1baa.png" width="900" /></p>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/1.embed" height="525" width="100%"></iframe><br>  
+
 
 📊 for문을 사용하지 않는 경우에는 <a>fig . add_trace( )</a> 를 다섯번 모두 호출해서 각 학생의 시험 성적들을 그려준다. 이렇게 데이터의 수가 많지 않은 경우에는 굳이 반복문을 사용하지 않아도 큰 부담이 없지만, 많은 데이터를 다루려면 위의 방법만으로는 좀 무리가 있을 수 있다고 생각한다.  
 
