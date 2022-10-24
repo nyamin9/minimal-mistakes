@@ -127,7 +127,7 @@ fig.show()
 ```  
 📊 변수 <a>col</a> 에 데이터의 열 개수를 넣어주고, 그 개수만큼 <a>for문</a> 을 돌리면서 <a>fig . add_trace( )</a> 를 호출해준다. 그 뒤부터는 데이터의 열에 인덱스로 접근해줌으로써 x축과 y축의 데이터를 정해준다.이렇게 하고 나면 시각화는 아래와 같이 나타난다.  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/158064679-1c647096-0fcb-40d6-84c8-63c6da7d8081.png" width="900" /></p>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/4.embed" height="525" width="100%"></iframe><br>  
 
 for 문을 사용하지 않은 경우와 같은 결과를 나타낸다.  
 * * *
