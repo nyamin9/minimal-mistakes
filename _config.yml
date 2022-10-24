@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Programin9"
-  avatar           : 
+  avatar           : "/assets/avatar.jpg"
   bio              : "의공학도의 데이터 분석 공부"
   location         : "South Korea"
   email            :
