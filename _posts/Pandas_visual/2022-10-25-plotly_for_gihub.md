@@ -105,13 +105,13 @@ tls.get_embed('https://plotly.com/~nyamin9/7/')
 >> '<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/7.embed" height="525" width="100%"></iframe>'
 ```  
 
-- 이제 그냥 이 링크를 포스팅 마크다운 파일에 붙여넣으면 된다.<br>  
+- 이제 그냥 이 링크를 포스팅 마크다운 파일에 붙여넣으면 된다. (작은따옴표는 제외)<br>  
   
 ***  
 
 📊 그 결과 이렇게 이쁜 반응형 plotly 그래프가 나온다!!  
 
-'<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/7.embed" height="525" width="100%"></iframe>'  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/7.embed" height="525" width="100%"></iframe>  
 
 ***  
 
