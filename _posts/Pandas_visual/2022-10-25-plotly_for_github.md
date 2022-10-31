@@ -4,7 +4,7 @@ title : "📊 Pandas 시각화 4 - plotly 그래프 github 블로그에 출력�
 categories:
     - Pandas_visual
 tags:
-    - [Pandas, Plotly, Visualization, githug]
+    - [Pandas, Plotly, Visualization, githu]
 
 toc : true
 toc_sticky : true
