@@ -144,7 +144,7 @@ fig.update_layout(
 fig.show()
 ```  
 
- <p align="center"><img src="https://user-images.githubusercontent.com/65170165/171837980-eb862160-6637-453f-ade6-5bceb116c5b3.png" width="1500" /></p>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/38.embed" height="525" width="100%"></iframe>  
  
 🐍 위의 도표에서 볼 수 있듯이 각 패턴 메소드의 기준값에 수평선을 그어 한눈에 들어오기 편하게 시각화했다. 이제 다른 attribute를 분석해보도록 하자.<br>  
 
@@ -222,7 +222,7 @@ fig.update_layout(
     
 fig.show()
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171838111-eca6d138-3a3c-4b6a-96b5-7a50ee0d07f7.png" width="1500" /></p><br>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/40.embed" height="525" width="100%"></iframe>  
 
 🚩 <span style="background-color:#ffdce0">설정한 기준인 min_confidence = 0.6 / Lift > 1 / min_support = 0.01 를 만족하는 경우가 없기 때문에 연관성이 있다고 보기 힘들다.</span><br>  
 
@@ -230,7 +230,7 @@ fig.show()
 
 ### 📌 2.3. BMI / Cardio  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171838819-58902551-f820-45d9-880b-18d2011d5cee.png" width="1500" /></p>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/56.embed" height="525" width="100%"></iframe>  
 
 🚩  설정한 기준인 min_confidence = 0.6 / Lift > 1 / min_support = 0.01 를 만족하는 경우가 있기 때문에 연관성이 있다고 볼 수 있다.<br>  
 
