@@ -92,7 +92,8 @@ fig.update_layout(
 fig.show()
 ```  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171838919-03db5f46-20a9-4166-b92c-3a87d244365b.png" width="1800" /></p><br>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/58.embed" height="525" width="100%"></iframe>  
+
 
 ***  
 
