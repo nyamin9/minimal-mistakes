@@ -122,7 +122,8 @@ fig.add_hline(y=0.5, line_dash="dot",
 fig.show()
 ```  
 
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/171839022-48234143-5a11-4d49-8e07-cc5f85b7bf29.png" width="1800" /></p><br>  
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~nyamin9/60.embed" height="525" width="100%"></iframe>  
+
 
 ***  
 
