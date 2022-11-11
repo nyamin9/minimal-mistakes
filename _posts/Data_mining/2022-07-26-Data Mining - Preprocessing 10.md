@@ -82,6 +82,7 @@ last_modified_at: 2022-07-26
 - 각각의 만들어지는 새로운 축들인 Principal Component들 또한 서로 orthogonal 해야함.  
 - 대부분의 variance가 PC1과 PC2만 가지고서 설명이 가능함.  
 - 내가 원하는 설명 정도가 나올때까지 Principal Component를 선택하고 합치는 것도 가능함.  
+- 즉, 모든 변수들을 가장 잘 설명하는 주성분을 찾는 방법  
 - 원하는 정도까지만 variance를 설명하면 되고, 이를 만족하는 Principal Component까지만 선택할 것이므로, 선택과정에서 Dimensionality Reduction.<br>  
 
 🧩 실제로 PCA에 관련된 연산은 우리의 소중한 컴퓨터가 해줄 것이기 때문에, 이번에 배운 개념들만 아주 소중히 머리에 간직해도 PCA가 무엇이냐는 질문에 당황하지 않고 대답할 수 있을 거라고 생각한다🙂!!  
