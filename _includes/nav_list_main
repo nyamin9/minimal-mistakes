@@ -104,7 +104,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Finance" %}
-                        <li><a href="/categories/finance" class="">📈 파이낸스 애널리틱스 프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/finance" class="">📈 선형회귀 물가 영향 지표 분석 프로젝트 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
