@@ -1,5 +1,5 @@
 ---
-title: "📈 2022 데이콘 KOSPI 분석 및 시각화 프로젝트"
+title: "🏆 2022 데이콘 KOSPI 분석 및 시각화 프로젝트"
 layout: archive
 permalink: categories/kospi
 author_profile: true
