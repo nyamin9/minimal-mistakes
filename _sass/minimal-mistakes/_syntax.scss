@@ -7,7 +7,7 @@ figure.highlight {
   position: relative;
   margin-bottom: 1em;
   background: #f1f3f5;
-  color: $base03;
+  color: $base06;
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -35,8 +35,8 @@ figure.highlight {
     &.rouge-gutter {
       padding-right: 1em;
       width: 1em;
-      color: $base04;
-      border-right: 1px solid $base04;
+      color: $base06;
+      border-right: 1px solid $base06;
       text-align: right;
       // 라인이 복사되지 않게 한다.
       -webkit-touch-callout: none;
@@ -64,7 +64,7 @@ figure.highlight {
 }
 
 .highlight .hll {
-  background-color: $base06;
+  background-color: #FFCCCC;
 }
 .highlight {
   .c {
@@ -85,7 +85,7 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: $base03;
+    color: $base06;
   }
   .o {
     /* Operator */
