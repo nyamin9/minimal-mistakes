@@ -7,7 +7,7 @@
 .highlight .ch { color: #768390; font-style: italic } /* Comment.Hashbang */
 .highlight .cm { color: #768390; font-style: italic } /* Comment.Multiline */
 .highlight .cp { color: #768390 } /* Comment.Preproc */ 
-.highlight .cpf { color: #768390; font-style: italic } /* Comment.PreprocFile */
+.highlight .cpf { color: #768390; font-style: italic } /* Comment.PreprocFile */ 
 .highlight .c1 { color: #768390; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #768390; font-weight: bold; font-style: italic } /* Comment.Special */ 
 .highlight .gd { background-color: #FFCCCC; border: 1px solid #CC0000 } /* Generic.Deleted */
