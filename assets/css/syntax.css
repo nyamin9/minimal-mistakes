@@ -37,7 +37,7 @@
 .highlight .ne { color: #CC0000; font-weight: bold } /* Name.Exception */
 .highlight .nf { color: #CC00FF } /* Name.Function */
 .highlight .nl { color: #9999FF } /* Name.Label */
-.highlight .nn { color: #00CCFF; font-weight: bold } /* Name.Namespace */
+.highlight .nn { color: #adbac7; font-weight: bold } /* Name.Namespace */
 .highlight .nt { color: #330099; font-weight: bold } /* Name.Tag */
 .highlight .nv { color: #6cb6ff } /* Name.Variable */
 .highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
