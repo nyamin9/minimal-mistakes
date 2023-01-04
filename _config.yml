@@ -193,29 +193,29 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
-#markdown: kramdown
-#kramdown:
-#  input: GFM
-#  syntax_highlighter: rouge
-#  highlighter: rouge
-#  syntax_highlighter_opts:
-#    block:
-#      line_numbers: true
-#lsi: false
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+lsi: false
 #excerpt_separator: "\n\n"
-#incremental: false
+incremental: false
 
 
 # Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+#kramdown:
+#  input: GFM
+#  hard_wrap: false
+#  auto_ids: true
+#  footnote_nr: 1
+#  entity_output: as_char
+#  toc_levels: 1..6
+#  smart_quotes: lsquo,rsquo,ldquo,rdquo
+#  enable_coderay: false
 
 
 # Sass/SCSS
