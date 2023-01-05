@@ -91,7 +91,7 @@ plt.show()
 # 전체기간 동안의 지수 트렌드와 월별, 주별 변동량
 m_2019.plot_components(forecast_2019);
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210681837-221fdbed-29a9-4fdb-81be-f8c57d2f6e0a.png" width="1500" /></p><br>  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210681837-221fdbed-29a9-4fdb-81be-f8c57d2f6e0a.png" width="1000" /></p><br>  
 
 - 2019~2022 기간 동안의 지수 트렌드와 월별, 주별 변동량을 나타내보았다.  
 - 코스피 지수가 3월 말과 한주의 시작인 월요일에 많이 떨어지는 것을 확인할 수 있었다.  
@@ -162,7 +162,7 @@ plt.show()
 # 트렌드와 요일별 지수 변동
 m_2022.plot_components(forecast_2022);
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210683698-b865f0d8-7666-453b-b1bc-f4aeb2edc4db.png" width="1500" /></p><br>  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210683698-b865f0d8-7666-453b-b1bc-f4aeb2edc4db.png" width="1000" /></p><br>  
 
 - 이번에도 트렌드와 요일별 지수 변동을 살펴보았다.  
 - 2022년도만 보면 7월에 지수가 정말 많이 떨어졌고, 월요일만 특히 낮았던 지난 3년과 달리 주중 내내 지수가 마이너스인 경우를 확인 할 수 있다.  
