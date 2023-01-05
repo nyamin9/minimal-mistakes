@@ -91,7 +91,7 @@ plt.show()
 # 전체기간 동안의 지수 트렌드와 월별, 주별 변동량
 m_2019.plot_components(forecast_2019);
 ```  
-<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210681837-221fdbed-29a9-4fdb-81be-f8c57d2f6e0a.png" width="750" /></p><br>  
+<p align="center"><img src="https://user-images.githubusercontent.com/65170165/210681837-221fdbed-29a9-4fdb-81be-f8c57d2f6e0a.png" width="700" /></p><br>  
 
 - 2019~2022 기간 동안의 지수 트렌드와 월별, 주별 변동량을 나타내보았다.  
 - 코스피 지수가 3월 말과 한주의 시작인 월요일에 많이 떨어지는 것을 확인할 수 있었다.  
