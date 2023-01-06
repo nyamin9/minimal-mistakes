@@ -1,5 +1,5 @@
 ---
-title : "🧩 데이터마이닝 (26) - 패턴분석_6 : Project_Support, Confidence, Lift_(1)"
+title : "🧩 데이터마이닝 (26) - 패턴분석_6 : Support, Confidence, Lift_(1)"
 
 categories:
     - Data_mining
