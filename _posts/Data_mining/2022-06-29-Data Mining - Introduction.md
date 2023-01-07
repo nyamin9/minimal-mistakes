@@ -41,8 +41,7 @@ last_modified_at: 2022-06-29
      
     
     
-👉 Data Cleaning ▶ Data Integration ▶ Data Selection ▶ Data Transform   
-    ▶ Data Mining ▶ Pattern Evaluation ▶ Knowledge Presentation  
+👉 Data Cleaning ▶ Integration ▶ Selection ▶ Transform ▶ Data Mining ▶ Pattern Evaluation ▶ Knowledge Presentation  
   
 👉 각각의 순서에서 사용하는 기법들은 앞으로 포스팅할 예정입니다!!  
 
