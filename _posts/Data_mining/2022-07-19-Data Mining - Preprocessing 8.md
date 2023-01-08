@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (15) - 데이터 전처리_8 : Data Reduction - Dimensionality"
+title : "🧩 데이터마이닝(15) 데이터 전처리_8 : Data Reduction-Dimensionality"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Reduction, Dimensionality]
+    - [Preprocessing, Reduction, Dimensionality]
 
 toc : true
 toc_sticky : true 
