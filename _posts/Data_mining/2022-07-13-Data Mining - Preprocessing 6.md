@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(13) 데이터 전처리_6 : Reduction / 비선�
 categories:
     - Data_mining
 tags:
-    - [Preprocessing, Reduction, Nonlinear]
+    - [Preprocessing, Reduction]
 
 toc : true
 toc_sticky : true 
