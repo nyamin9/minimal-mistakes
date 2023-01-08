@@ -1,5 +1,5 @@
 ---
-title : "🧩 데이터마이닝 (3) - QQ plot"
+title : "🧩 데이터마이닝(3) QQ plot"
 
 categories:
     - Data_mining
