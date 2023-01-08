@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (28) - 패턴분석_8 : Null Invariant Measure (1)"
+title : "🧩 데이터마이닝(28) 패턴분석_8 : Null Invariant Measure(1)"
 
 categories:
     - Data_mining
 tags:
-    - [Data, Data Mining, Pattern, itemset, Null Invariant, Kulczynski,  Visualization]
+    - [Pattern, Null Invariant, Kulczynski, Visualization]
 
 toc : true
 toc_sticky : true 
