@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (22) - 패턴분석_2 : Many Frequent Patterns"
+title : "🧩 데이터마이닝(22) 패턴분석_2 : Many Frequent Patterns"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Pattern, itemset, support]
+    - [Pattern, itemset, support]
 
 toc : true
 toc_sticky : true 
