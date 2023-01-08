@@ -1,5 +1,5 @@
 ---
-title : "🧩 데이터마이닝(16) 데이터 전처리_9 : Data Reduction//Subset Selection"
+title : "🧩 데이터마이닝(16) 데이터 전처리_9 : Reduction / Subset Selection"
 
 categories:
     - Data_mining
