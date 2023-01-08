@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (23) - 패턴분석_3 : Apriori Algorithm / ECLAT"
+title : "🧩 데이터마이닝(23) 패턴분석_3 : Apriori Algorithm / ECLAT"
 
 categories:
     - Data_mining
 tags:
-    - [Data, Data Mining, Pattern, itemset, support, Apriori]
+    - [Pattern, itemset, support, Apriori]
 
 toc : true
 toc_sticky : true 
