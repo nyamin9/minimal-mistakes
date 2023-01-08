@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(25) 패턴분석_5 : Pattern Evaluation(2)"
 categories:
     - Data_mining
 tags:
-    - [Pattern, itemset, null invariant]
+    - [Pattern, null invariant]
 
 toc : true
 toc_sticky : true 
