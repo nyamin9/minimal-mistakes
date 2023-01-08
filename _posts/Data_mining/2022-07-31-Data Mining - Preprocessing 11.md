@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝(18) 데이터 전처리_11 : Data Reduction-주성분 분석 2"
+title : "🧩 데이터마이닝(18) 데이터 전처리_11 : Data Reduction//주성분 분석2"
 
 categories:
     - Data_mining
 tags:
-    - [Preprocessing, PCA, Dimensionality]
+    - [Preprocessing, PCA]
 
 toc : true
 toc_sticky : true 
