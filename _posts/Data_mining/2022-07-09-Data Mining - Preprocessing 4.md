@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (11) - 데이터 전처리_4 : Data Reduction - Introduce"
+title : "🧩 데이터마이닝(11) 데이터 전처리_4 : Data Reduction - Introduce"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Reduction]
+    - [Preprocessing, Reduction]
 
 toc : true
 toc_sticky : true 
