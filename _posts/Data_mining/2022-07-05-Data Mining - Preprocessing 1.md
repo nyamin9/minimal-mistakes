@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (8) - 데이터 전처리_1 : Data Cleaning"
+title : "🧩 데이터마이닝(8) 데이터 전처리_1 : Data Cleaning"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Cleaning]
+    - [Preprocessing, Cleaning]
 
 toc : true
 toc_sticky : true 
