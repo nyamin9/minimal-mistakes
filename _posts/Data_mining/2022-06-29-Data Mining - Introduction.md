@@ -3,8 +3,7 @@ title : "🧩 데이터마이닝 (2) Introduction"
 
 categories:
     - Data_mining
-tags:
-    - [Data Mining]
+
 
 toc : true
 toc_sticky : true
