@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(26) 패턴분석_6 : Support/Confidence/Lift(1)
 categories:
     - Data_mining
 tags:
-    - [Pattern, support, confidence, lift]
+    - [Pattern]
 
 toc : true
 toc_sticky : true 
