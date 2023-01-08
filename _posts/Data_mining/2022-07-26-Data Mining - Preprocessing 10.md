@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (17) - 데이터 전처리_10 : Data Reduction - 주성분 분석(PCA)"
+title : "🧩 데이터마이닝(17) 데이터 전처리_10 : Data Reduction-주성분 분석"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, PCA, Dimensionality]
+    - [Preprocessing, PCA, Dimensionality]
 
 toc : true
 toc_sticky : true 
