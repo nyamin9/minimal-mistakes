@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (24) - 패턴분석_4 : Pattern Evaluation (1)"
+title : "🧩 데이터마이닝(24) 패턴분석_4 : Pattern Evaluation(1)"
 
 categories:
     - Data_mining
 tags:
-    - [Data, Data Mining, Pattern, itemset, support, Lift, chi-square]
+    - [Pattern, itemset, support, Lift, chi-square]
 
 toc : true
 toc_sticky : true 
