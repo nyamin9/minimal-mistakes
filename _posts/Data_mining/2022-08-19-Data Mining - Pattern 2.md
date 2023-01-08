@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(22) 패턴분석_2 : Many Frequent Patterns"
 categories:
     - Data_mining
 tags:
-    - [Pattern, itemset, support]
+    - [Pattern]
 
 toc : true
 toc_sticky : true 
