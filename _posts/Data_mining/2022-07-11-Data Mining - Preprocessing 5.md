@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (12) - 데이터 전처리_5 : Data Reduction - Linear Regression (선형회귀)"
+title : "🧩 데이터마이닝(12) 데이터 전처리_5 : Data Reduction-선형회귀"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Reduction, Linear]
+    - [Preprocessing, Reduction, Linear]
 
 toc : true
 toc_sticky : true 
