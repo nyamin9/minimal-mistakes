@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (14) - 데이터 전처리_7 : Data Reduction - Nonparametric"
+title : "🧩 데이터마이닝(14) 데이터 전처리_7 : Data Reduction - Nonparametric"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Reduction, Nonparametric]
+    - [Preprocessing, Reduction, Nonparametric]
 
 toc : true
 toc_sticky : true 
