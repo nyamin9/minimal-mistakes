@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(12) 데이터 전처리_5 : Reduction / 선형�
 categories:
     - Data_mining
 tags:
-    - [Preprocessing, Reduction, Linear]
+    - [Preprocessing, Reduction]
 
 toc : true
 toc_sticky : true 
