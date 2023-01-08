@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝(19) 데이터 전처리_12 : Data Transformation"
+title : "🧩 데이터마이닝(19) 데이터 전처리_12 : Transformation"
 
 categories:
     - Data_mining
 tags:
-    - [Preprocessing, Data Transformation]
+    - [Preprocessing, Transformation]
 
 toc : true
 toc_sticky : true 
