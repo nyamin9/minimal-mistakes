@@ -1,5 +1,5 @@
 ---
-title: "🫀 심혈관질환 데이터마이닝 프로젝트"
+title: "🫀심혈관질환 분석"
 layout: archive
 permalink: categories/cardio
 author_profile: true
