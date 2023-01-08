@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(27) 패턴분석_7 : Support/Confidence/Lift(2)
 categories:
     - Data_mining
 tags:
-    - [Pattern, support, confidence, lift, Visualization]
+    - [Pattern, Visualization]
 
 toc : true
 toc_sticky : true 
