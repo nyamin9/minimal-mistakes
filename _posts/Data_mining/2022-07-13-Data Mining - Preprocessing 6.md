@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (13) - 데이터 전처리_6 : Data Reduction - Nonlinear Regression(비선형회귀)"
+title : "🧩 데이터마이닝(13) 데이터 전처리_6 : Data Reduction-비선형회귀"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Reduction, Nonlinear]
+    - [Preprocessing, Reduction, Nonlinear]
 
 toc : true
 toc_sticky : true 
