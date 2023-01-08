@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (25) - 패턴분석_5 : Pattern Evaluation (2)"
+title : "🧩 데이터마이닝(25) 패턴분석_5 : Pattern Evaluation(2)"
 
 categories:
     - Data_mining
 tags:
-    - [Data, Data Mining, Pattern, itemset, null invariant]
+    - [Pattern, itemset, null invariant]
 
 toc : true
 toc_sticky : true 
