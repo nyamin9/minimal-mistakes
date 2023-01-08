@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (21) - 패턴분석_1 : Preview"
+title : "🧩 데이터마이닝(21) 패턴분석_1 : Preview"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Pattern, itemset, support]
+    - [Pattern, itemset, support]
 
 toc : true
 toc_sticky : true 
