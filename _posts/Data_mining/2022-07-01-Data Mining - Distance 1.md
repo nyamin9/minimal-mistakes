@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(4) Distance_1 : Distance Matrix"
 categories:
     - Data_mining
 tags:
-    - [Data Mining, Distance]
+    - [Distance]
 
 toc : true
 toc_sticky : true
