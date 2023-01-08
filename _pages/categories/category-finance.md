@@ -1,5 +1,5 @@
 ---
-title: "📈 선형회귀 물가 영향 지표 분석 프로젝트"
+title: "📈물가 영향 지표 분석"
 layout: archive
 permalink: categories/finance
 author_profile: true
