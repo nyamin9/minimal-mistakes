@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (26) - 패턴분석_6 : Support, Confidence, Lift_(1)"
+title : "🧩 데이터마이닝(26) 패턴분석_6 : Support/Confidence/Lift(1)"
 
 categories:
     - Data_mining
 tags:
-    - [Data, Data Mining, Pattern, itemset, support, confidence, lift]
+    - [Pattern, support, confidence, lift]
 
 toc : true
 toc_sticky : true 
