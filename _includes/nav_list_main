@@ -83,28 +83,28 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Cardio" %}
-                        <li><a href="/categories/cardio" class="">🫀 심혈관질환 데이터마이닝 프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/cardio" class="">🫀심혈관질환 분석 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "EEG" %}
-                        <li><a href="/categories/eeg" class="">🧠 뇌파 데이터 LSTM 프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/eeg" class="">🧠뇌파 LSTM 모델 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Kospi" %}
-                        <li><a href="/categories/kospi" class="">🏆 2022 데이콘 KOSPI 분석 및 시각화 프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/kospi" class="">🏆데이콘 KOSPI 분석 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Finance" %}
-                        <li><a href="/categories/finance" class="">📈 선형회귀 물가 영향 지표 분석 프로젝트 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/finance" class="">📈물가 영향 지표 분석  ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
