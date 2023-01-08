@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (9) - 데이터 전처리_2 : Data Integration - chi-square test"
+title : "🧩 데이터마이닝(9) 데이터 전처리_2 : Data Integration - chi-square test"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing, Integration]
+    - [Preprocessing, Integration]
 
 toc : true
 toc_sticky : true 
