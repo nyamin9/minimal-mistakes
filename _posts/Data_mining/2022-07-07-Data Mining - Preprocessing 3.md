@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝(10) 데이터 전처리_3 : Data Integration - Numerical Data"
+title : "🧩 데이터마이닝(10) 데이터 전처리_3 : Data Integration//Numerical Data"
 
 categories:
     - Data_mining
 tags:
-    - [Preprocessing, Integration, Variance]
+    - [Preprocessing, Integration]
 
 toc : true
 toc_sticky : true 
