@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (5) - Distance_2 : Categorical / Binary"
+title : "🧩 데이터마이닝(5) Distance_2 : Categorical / Binary"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Distance, Binary, contingency table]
+    - [Distance, Binary, contingency table]
 
 toc : true
 toc_sticky : true
