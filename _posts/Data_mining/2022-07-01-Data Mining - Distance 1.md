@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (4) - Distance_1 : Distance Matrix"
+title : "🧩 데이터마이닝(4) Distance_1 : Distance Matrix"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Distance]
+    - [Data Mining, Distance]
 
 toc : true
 toc_sticky : true
