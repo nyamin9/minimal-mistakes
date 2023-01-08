@@ -1,5 +1,5 @@
 ---
-title: "🧠 뇌파 데이터 LSTM 프로젝트"
+title: "🧠뇌파 LSTM 모델"
 layout: archive
 permalink: categories/eeg
 author_profile: true
