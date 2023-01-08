@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(24) 패턴분석_4 : Pattern Evaluation(1)"
 categories:
     - Data_mining
 tags:
-    - [Pattern, itemset, support, Lift, chi-square]
+    - [Pattern]
 
 toc : true
 toc_sticky : true 
