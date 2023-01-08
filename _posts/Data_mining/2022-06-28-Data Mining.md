@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(1) - 프롤로그"
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining]
+    - [Data Mining]
 
 toc : true
 toc_sticky : true
