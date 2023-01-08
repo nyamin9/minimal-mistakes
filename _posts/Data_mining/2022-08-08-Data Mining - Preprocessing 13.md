@@ -1,10 +1,10 @@
 ---
-title : "🧩 데이터마이닝 (20) - 데이터 전처리_13 : Review"
+title : "🧩 데이터마이닝(20) 데이터 전처리_13 : Review"
 
 categories:
     - Data_mining
 tags:
-    - [Pandas, Data, Data Mining, Preprocessing]
+    - [Preprocessing]
 
 toc : true
 toc_sticky : true 
