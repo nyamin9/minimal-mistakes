@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(21) 패턴분석_1 : Preview"
 categories:
     - Data_mining
 tags:
-    - [Pattern, itemset, support]
+    - [Pattern]
 
 toc : true
 toc_sticky : true 
