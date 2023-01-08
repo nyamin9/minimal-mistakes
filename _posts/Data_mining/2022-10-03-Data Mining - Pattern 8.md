@@ -4,7 +4,7 @@ title : "🧩 데이터마이닝(28) 패턴분석_8 : Null Invariant Measure(1)"
 categories:
     - Data_mining
 tags:
-    - [Pattern, ull Invariant, Visualization]
+    - [Pattern, Visualization]
 
 toc : true
 toc_sticky : true 
