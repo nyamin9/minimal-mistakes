@@ -4,7 +4,7 @@ title : "🏆데이콘 KOSPI 분석 04-FbProphet : KOSPI 지수 예측하기"
 categories:
     - Kospi
 tags:
-    - [데이콘, KOSPI, 시각화, plotly, fbprophet]
+    - [데이콘, KOSPI, Visualization, plotly, fbprophet]
 
 toc : true
 toc_sticky : true 
