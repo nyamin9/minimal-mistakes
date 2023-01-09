@@ -1,5 +1,5 @@
 ---
-title : "🏆데이콘 KOSPI 분석 04-FbProphet : KOSPI 지수 예측"
+title : "🏆데이콘 KOSPI 분석 04-FbProphet : KOSPI 예측"
 
 categories:
     - Kospi
