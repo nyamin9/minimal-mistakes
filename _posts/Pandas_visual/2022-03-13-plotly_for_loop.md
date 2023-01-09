@@ -4,7 +4,7 @@ title : "📊 Pandas 시각화 3 - plotly에서 for문 사용하기"
 categories:
     - Pandas_visual
 tags:
-    - [Pandas, Plotly, Visualization, forloop]
+    - [Pandas, plotly, Visualization]
 
 toc : true
 toc_sticky : true
