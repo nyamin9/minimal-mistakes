@@ -1,10 +1,10 @@
 ---
-title : "📊 Pandas 시각화 4 - plotly 그래프 github 블로그에 출력하기"
+title : "📊 Pandas 시각화 4 - plotly github 블로그에 출력"
 
 categories:
     - Pandas_visual
 tags:
-    - [Pandas, Plotly, Visualization, github]
+    - [Pandas, plotly, Visualization]
 
 toc : true
 toc_sticky : true
