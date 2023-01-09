@@ -1,10 +1,10 @@
 ---
-title : "🏆2022 데이콘 KOSPI 프로젝트 04-FbProphet으로 KOSPI 지수 예측하기"
+title : "🏆데이콘 KOSPI 분석 04-FbProphet : KOSPI 지수 예측하기"
 
 categories:
     - Kospi
 tags:
-    - [데이콘, KOSPI, 시각화, plotly, fbprophet, 이동평균선, ralling()]
+    - [데이콘, KOSPI, 시각화, plotly, fbprophet]
 
 toc : true
 toc_sticky : true 
