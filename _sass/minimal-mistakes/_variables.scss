@@ -10,7 +10,7 @@ $doc-font-size: 16 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
-$indent-var: 2.0em !default;
+$indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: Georgia, Times, serif !default;
@@ -62,7 +62,7 @@ $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $background-color: #fff !default;
-$code-background-color: #ededeb !default;
+$code-background-color: #fafafa !default;
 $code-background-color-dark: $light-gray !default;
 $text-color: $dark-gray !default;
 $muted-text-color: mix(#fff, $text-color, 20%) !default;
@@ -155,7 +155,7 @@ $max-width: $x-large !default;
    Grid
    ========================================================================== */
 
-$right-sidebar-width-narrow: 150px !default;
+$right-sidebar-width-narrow: 100px !default;
 $right-sidebar-width: 200px !default;
 $right-sidebar-width-wide: 250px !default;
 
