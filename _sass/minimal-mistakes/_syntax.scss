@@ -6,8 +6,8 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: #f1f3f5;
-  color: #adbac7;
+  background: $base00;
+  color: $base05;
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -35,16 +35,9 @@ figure.highlight {
     &.rouge-gutter {
       padding-right: 1em;
       width: 1em;
-      color: #adbac7;
-      border-right: 1px solid #adbac7;
+      color: $base04;
+      border-right: 1px solid $base04;
       text-align: right;
-      // 라인이 복사되지 않게 한다.
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
     }
 
     /* code */
@@ -64,7 +57,7 @@ figure.highlight {
 }
 
 .highlight .hll {
-  background-color: #FFCCCC;
+  background-color: $base06;
 }
 .highlight {
   .c {
@@ -77,7 +70,7 @@ figure.highlight {
   }
   .k {
     /* Keyword */
-    color: $base0c;
+    color: $base0e;
   }
   .l {
     /* Literal */
@@ -85,7 +78,7 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: #adbac7;
+    color: $base05;
   }
   .o {
     /* Operator */
@@ -208,7 +201,7 @@ figure.highlight {
   }
   .nf {
     /* Name.Function */
-    color: $base05;
+    color: $base0d;
   }
   .nl {
     /* Name.Label */
